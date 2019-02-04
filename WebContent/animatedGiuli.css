@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
 
 html, body { height: 100%; }
-body { display: flex; justify-content: center; align-items: center; margin:20px 0; text-align:center; background:beige; overflow:hidden; }
+body { display: flex; justify-content: center; align-items: center; text-align:center; background:beige; overflow:hidden; }
 
 h1 {
  font-size:5em;
@@ -10,6 +10,8 @@ h1 {
     -moz-user-select:none;
      -ms-user-select:none;
          user-select:none;
+        margin-left: 16%;
+        margin-bottom: 12%;
 }
 
 h1 span { display:inline-block; -webkit-animation:float .2s ease-in-out infinite; animation:float .2s ease-in-out infinite; }
