@@ -1,17 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
 
+
 html, body { height: 100%; }
 body { display: flex; justify-content: center; align-items: center; text-align:center; background:beige; overflow:hidden; }
 
 h1 {
  font-size:5em;
+ position:fixed;
+ display: inline-block;
  font:bold 7.5vw/1.6 'Signika', sans-serif;
  -webkit-user-select:none;
     -moz-user-select:none;
      -ms-user-select:none;
          user-select:none;
-        margin-left: 16%;
-        margin-bottom: 12%;
+         padding-bottom: 20%
+
 }
 
 h1 span { display:inline-block; -webkit-animation:float .2s ease-in-out infinite; animation:float .2s ease-in-out infinite; }
@@ -55,3 +58,34 @@ h1 span:nth-child(11){ -webkit-animation-delay:.5s; animation-delay:.5s; }
 h1 span:nth-child(12){ -webkit-animation-delay:.55s; animation-delay:.55s; }
 h1 span:nth-child(13){ -webkit-animation-delay:.6s; animation-delay:.6s; }
 h1 span:nth-child(14){ -webkit-animation-delay:.65s; animation-delay:.65s; }
+
+
+.button {
+	position: relative;
+	display: inline-block;
+	padding: 10px 10px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+	display: inline-block;
+
+}
+
+.button:hover {
+	background-color: #3e8e41
+}
+
+.button:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+

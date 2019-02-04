@@ -2,6 +2,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<title>SMILE</title>
+
+
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 	integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
@@ -19,21 +22,123 @@
 	integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
 	crossorigin="anonymous"></script>
 
-
-<title>Insert title here</title>
-
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Open+Sans:300"
+	type="text/css" />
 </head>
-<body style="background-image: url(images/blackboard.jpg)">
 
-	<div >
-		<h1>
-			<span style="color: #f44242">S</span> 
-			<span style="color: #f4df42">M</span>
-			<span style="color: #26d351">I</span> 
-			<span style="color: #2081D6">L</span>
-			<span style="color: #ff19d1">E</span>
-		</h1>
+<link rel="stylesheet" href="animatedGiuli.css" type="text/css">
+<body>
+
+	<h1>
+		<span>S</span><span>M</span><span>I</span><span>L</span><span>E</span>
+	</h1>
+	<div>
+		<button class="button" data-toggle="modal" data-target="#logModal">
+			<FONT FACE="Comic Sans MS">Log in</FONT><br>
+		</button>
+		<button class="button" data-toggle="modal" data-target="#regModal">
+			<FONT FACE="Comic Sans MS">Registrazione</FONT><br>
+		</button>
 	</div>
 
+	<!-- Modal -->
+	<div class="modal fade" id="regModal" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+				<form action="/">
+					<div id="registration-form">
+							<div class="form-group">
+								<label for="name"><b>Nome:</b></label> <input type="text"
+									class="form-control" id="name" placeholder="Enter your name"
+									name="name">
+							</div>
+							<div class="form-group">
+								<label for="newemail"><b>Email:</b></label> <input type="email"
+									class="form-control" id="newemail"
+									placeholder="Enter new email" name="newemail">
+							</div>
+							<div class="form-group">
+								<label for="newpwd"><b>Password:</b></label> <input type="password"
+									class="form-control" id="newpwd" placeholder="New password"
+									name="newpwd">
+							</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="button" data-dismiss="modal">Annulla</button>
+					<button type="button" type="submit" class="button">Registrati!</button>
+				</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+
+	
+	
+	<!-- Modal -->
+	<div class="modal fade" id="logModal" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+				<form action="/">
+					<div id="registration-form">
+				
+							<div class="form-group">
+								<label for="newemail"><b>Email:</b></label> <input type="email"
+									class="form-control" id="newemail"
+									placeholder="Enter new email" name="newemail">
+							</div>
+							<div class="form-group">
+								<label for="newpwd"><b>Password:</b></label> <input type="password"
+									class="form-control" id="newpwd" placeholder="New password"
+									name="newpwd">
+							</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="button" data-dismiss="modal">Annulla</button>
+					<button type="button" type="submit" class="button">Log in!!</button>
+				</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+
+	
 </body>
+
+<script>
+// Get the modal
+var regmodal = document.getElementById('regModal');
+var	logmodal = document.getElementById('logModal');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == regmodal || event.target ==logmodal") {
+        modal.style.display = "none";
+    }
+}
+</script>
 </html>
