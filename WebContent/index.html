@@ -29,7 +29,6 @@
 
 <link rel="stylesheet" href="animatedGiuli.css" type="text/css">
 <body>
-
 	<h1>
 		<span>S</span><span>M</span><span>I</span><span>L</span><span>E</span>
 	</h1>
@@ -42,7 +41,7 @@
 		</button>
 	</div>
 
-	<!-- Modal -->
+	<!-- Modal Reg -->
 	<div class="modal fade" id="regModal" tabindex="-1" role="dialog"
 		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
@@ -56,8 +55,8 @@
 					</button>
 				</div>
 				<div class="modal-body">
-				<form action="/">
-					<div id="registration-form">
+					<form action="/">
+						<div id="registration-form">
 							<div class="form-group">
 								<label for="name"><b>Nome:</b></label> <input type="text"
 									class="form-control" id="name" placeholder="Enter your name"
@@ -69,11 +68,11 @@
 									placeholder="Enter new email" name="newemail">
 							</div>
 							<div class="form-group">
-								<label for="newpwd"><b>Password:</b></label> <input type="password"
-									class="form-control" id="newpwd" placeholder="New password"
-									name="newpwd">
+								<label for="newpwd"><b>Password:</b></label> <input
+									type="password" class="form-control" id="newpwd"
+									placeholder="New password" name="newpwd">
 							</div>
-					</div>
+						</div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="button" data-dismiss="modal">Annulla</button>
@@ -85,8 +84,8 @@
 		</div>
 	</div>
 
-	
-	
+
+
 	<!-- Modal -->
 	<div class="modal fade" id="logModal" tabindex="-1" role="dialog"
 		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -101,44 +100,44 @@
 					</button>
 				</div>
 				<div class="modal-body">
-				<form action="/">
-					<div id="registration-form">
-				
+					<form action="/">
+						<div id="login-form">
 							<div class="form-group">
 								<label for="newemail"><b>Email:</b></label> <input type="email"
-									class="form-control" id="newemail"
-									placeholder="Enter new email" name="newemail">
+									class="form-control" id="logemail"
+									placeholder="Enter new email" name="logemail">
 							</div>
 							<div class="form-group">
-								<label for="newpwd"><b>Password:</b></label> <input type="password"
-									class="form-control" id="newpwd" placeholder="New password"
-									name="newpwd">
+								<label for="newpwd"><b>Password:</b></label> <input
+									type="password" class="form-control" id="logpwd"
+									placeholder="New password" name="logpwd">
 							</div>
-					</div>
+						</div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="button" data-dismiss="modal">Annulla</button>
-					<button type="button" type="submit" class="button">Log in!!</button>
+					<button type="button" type="submit" class="button">Log
+						in!!</button>
 				</div>
 				</form>
 			</div>
 
 		</div>
 	</div>
-
-	
+	<span>
+	</span>
+	<div style="position: absolute;margin-top: 20%;">
+		<audio 
+		controls 
+		autoplay 
+		
+		src="music/miichannel.mp3">
+			Your browser does not support the
+			<code>audio</code>
+			element.
+		</audio>
+	</div>
 </body>
 
-<script>
-// Get the modal
-var regmodal = document.getElementById('regModal');
-var	logmodal = document.getElementById('logModal');
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == regmodal || event.target ==logmodal") {
-        modal.style.display = "none";
-    }
-}
-</script>
 </html>
