@@ -1,4 +1,16 @@
 /* Block placement */
+h1 {
+ font-size:5em;
+ position:fixed;
+ display: inline-block;
+ font:bold 7.5vw/1.6 'Signika', sans-serif;
+ -webkit-user-select:none;
+    -moz-user-select:none;
+     -ms-user-select:none;
+         user-select:none;
+         padding-bottom: 20%
+
+}
 :root {
   font-size: 20px;
 }
