@@ -28,10 +28,11 @@ public class Register extends HttpServlet {
 		String newpwd = request.getParameter("newpwd");
 
 		Database.utenti.add(new Utente(username, newemail, newpwd));
-		
+		System.out.println("Nuovo utente registrato: " + username + ", " + newemail);
 		HttpSession session=request.getSession();  
 		session.setAttribute("username",username);
 		session.setAttribute("email", newemail);
+		
 		response.sendRedirect("play.jsp");
 	}
 

@@ -32,19 +32,31 @@
 </head>
 <link rel="stylesheet" href="textAnimatedPlay.css" type="text/css">
 
-<%
-	if(session.getAttribute("email") == ""){
-		//redirect con errore senza login
+<script type="text/javascript">
+	$(document).ready(function(){
+		<% String email = "" + session.getAttribute("email"); %>
+		if("<%=email%>" == '' || "<%=email%>" == 'null')
+		window.location.href="index.html?login=failed";
+	});
+	
+	function logout(){
+		var confirm = window.confirm("Vuoi effettuare il logout?");
+		if(confirm){
+			<% session.invalidate(); %>
+			window.location.href="index.html";	
+			}
+		}
 		
-	}
-
-%>
+	
+</script>
 
 <body>
-
+	<a class="btn btn-info" onclick="logout()" href="index.html"
+		style="position: absolute; top: 8px; left: 16px; font-size: 18px;">
+		Log out </a>
 	<h1>
 		<span>S</span><span>M</span><span>I</span><span>L</span><span>E</span>
-	
+
 	</h1>
 
 	<div>
