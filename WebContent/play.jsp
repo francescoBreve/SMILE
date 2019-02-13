@@ -50,25 +50,67 @@
 				});
 			}
 		}
-		
+	function myStats(){
+		alert("test");
+	}
 	
 </script>
 
 <style>
 .bookmark {
-	position: relative;
-	height: 150px;
-	width: 104px;
-	padding: 0px;
-	-webkit-transform: rotate(0deg) skew(0deg);
-	transform: rotate(0deg) skew(0deg);
-	border-left: 52px solid red;
-	border-right: 52px solid red;
-	border-bottom: 40px solid transparent;
+  position: relative;
+  top: 0;
+  right: 20%;
+  height: 6em;
+  width: 5em;
+  background-color: red;
+  background-image:
+    linear-gradient(
+      hsla(0, 0%, 100%, 0),
+      hsla(0, 0%, 100%, 0.5) 5px,
+      hsla(0, 0%, 100%, 0) 25px);
+  -webkit-filter: drop-shadow(0 2px 6px hsla(0, 0%, 0%, 0.75));
+  box-sizing: border-box;
+  padding-top: 50px;
+  color: white;
+  font-size: 1.5em;
+  text-shadow: 0 -1px 0 hsla(0, 0%, 0%, 0.5);
+}
+.bookmark:before,
+.bookmark:after{
+  content: '';
+  display: block;
+  position: absolute;
+}
+.bookmark:before {
+  bottom: -50%;
+  height: 100%;
+  width: 100%;
+  background-image:
+    linear-gradient(
+      -45deg,
+      transparent 50%,
+      red 50%),
+    linear-gradient(
+      45deg,
+      transparent 50%,
+      red 50%);
+  z-index: -1;
+}
+.bookmark:after {
+  height: 136.5%;
+  width: 88%;
+  left: 6%;
+  top: 0;
+  border-style: dashed;
+  border-color: yellow;
+  border-width: 0 1px;
+  pointer-events: none;
 }
 
-.bookmark:hover {
-	height: 170px;
+.bookmark:hover{
+ height: 30%;
+ cursor: pointer;
 }
 
 .myButton {
@@ -215,8 +257,8 @@
 
 <% String nomeUtente = "" + session.getAttribute("username"); %>
 <body>
-	<div style="left: 40%" class="bookmark">
-		<p style="right: 40px; position: relative;">Le mie statistiche</p>
+	<div style="left: 40%" class="bookmark" onclick="myStats()">
+		<p style="position: relative;">Le mie statistiche</p>
 	</div>
 	<a class="btn btn-info" onclick="logout()"
 		style="position: absolute; top: 8px; left: 16px; font-size: 18px
