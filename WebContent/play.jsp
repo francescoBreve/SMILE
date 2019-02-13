@@ -28,32 +28,57 @@
 	href="https://fonts.googleapis.com/css?family=Open+Sans:300"
 	type="text/css" />
 
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
 
 </head>
 <link rel="stylesheet" href="textAnimatedPlay.css" type="text/css">
 
 <script type="text/javascript">
-	$(document).ready(function(){
-		<% String email = "" + session.getAttribute("email"); %>
-		if("<%=email%>" == '' || "<%=email%>" == 'null')
-		window.location.href="index.html?login=failed";
-	});
 	
 	function logout(){
 		var confirm = window.confirm("Vuoi effettuare il logout?");
-		if(confirm){
-			<% session.invalidate(); %>
-			window.location.href="index.html";	
+		if(confirm){	
+				$.ajax({
+					url: "Logout",
+					method: "POST",
+					success: function(){
+						alert("Logout avvenuto con successo");
+						window.location.href = "index.html";
+					}
+				});
 			}
 		}
 		
 	
 </script>
 
+<style>
+.bookmark {
+	position: relative;
+	height: 150px;
+	width: 104px;
+	padding: 0px;
+	-webkit-transform: rotate(0deg) skew(0deg);
+	transform: rotate(0deg) skew(0deg);
+	border-left: 52px solid red;
+	border-right: 52px solid red;
+	border-bottom: 40px solid transparent;
+}
+
+.bookmark:hover {
+	height: 170px;
+}
+</style>
+<% String nomeUtente = "" + session.getAttribute("username"); %>
 <body>
-	<a class="btn btn-info" onclick="logout()" href="index.html"
+	<div style="left: 40%" class="bookmark">
+		<p style="right: 40px; position: relative;">Le mie statistiche</p>
+	</div>
+	<a class="btn btn-info" onclick="logout()"
 		style="position: absolute; top: 8px; left: 16px; font-size: 18px;">
-		Log out </a>
+		Log out <%= nomeUtente %></a>
 	<h1>
 		<span>S</span><span>M</span><span>I</span><span>L</span><span>E</span>
 
