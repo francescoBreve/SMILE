@@ -70,18 +70,171 @@
 .bookmark:hover {
 	height: 170px;
 }
+
+.myButton {
+	-moz-box-shadow: inset 0px 1px 0px 0px #dcecfb;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #dcecfb;
+	box-shadow: inset 0px 1px 0px 0px #dcecfb;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bddbfa
+		), color-stop(1, #80b5ea));
+	background: -moz-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+	background: -webkit-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+	background: -o-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+	background: -ms-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+	background: linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bddbfa',
+		endColorstr='#80b5ea', GradientType=0);
+	background-color: #bddbfa;
+	-moz-border-radius: 42px;
+	-webkit-border-radius: 42px;
+	border-radius: 42px;
+	border: 1px solid #84bbf3;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px 37px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #528ecc;
+}
+
+.myButton:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #80b5ea
+		), color-stop(1, #bddbfa));
+	background: -moz-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+	background: -webkit-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+	background: -o-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+	background: -ms-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+	background: linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80b5ea',
+		endColorstr='#bddbfa', GradientType=0);
+	background-color: #80b5ea;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.myButton1 {
+	-moz-box-shadow: inset 0px 1px 0px 0px #1564ad;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #1564ad;
+	box-shadow: inset 0px 1px 0px 0px #1564ad;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #79bbff
+		), color-stop(1, #378de5));
+	background: -moz-linear-gradient(top, #79bbff 5%, #378de5 100%);
+	background: -webkit-linear-gradient(top, #79bbff 5%, #378de5 100%);
+	background: -o-linear-gradient(top, #79bbff 5%, #378de5 100%);
+	background: -ms-linear-gradient(top, #79bbff 5%, #378de5 100%);
+	background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff',
+		endColorstr='#378de5', GradientType=0);
+	background-color: #79bbff;
+	-moz-border-radius: 42px;
+	-webkit-border-radius: 42px;
+	border-radius: 42px;
+	border: 1px solid #337bc4;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px 37px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #528ecc;
+}
+
+.myButton1:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #378de5
+		), color-stop(1, #79bbff));
+	background: -moz-linear-gradient(top, #378de5 5%, #79bbff 100%);
+	background: -webkit-linear-gradient(top, #378de5 5%, #79bbff 100%);
+	background: -o-linear-gradient(top, #378de5 5%, #79bbff 100%);
+	background: -ms-linear-gradient(top, #378de5 5%, #79bbff 100%);
+	background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5',
+		endColorstr='#79bbff', GradientType=0);
+	background-color: #378de5;
+}
+
+.myButton1:active {
+	position: relative;
+	top: 1px;
+}
+
+.myButton2 {
+	-moz-box-shadow: inset 0px 1px 0px 0px #54a3f7;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #54a3f7;
+	box-shadow: inset 0px 1px 0px 0px #54a3f7;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1
+		), color-stop(1, #0061a7));
+	background: -moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background: -webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background: -o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background: -ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1',
+		endColorstr='#0061a7', GradientType=0);
+	background-color: #007dc1;
+	-moz-border-radius: 42px;
+	-webkit-border-radius: 42px;
+	border-radius: 42px;
+	border: 1px solid #124d77;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px 37px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #154682;
+}
+
+.myButton2:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7
+		), color-stop(1, #007dc1));
+	background: -moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background: -webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background: -o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background: -ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7',
+		endColorstr='#007dc1', GradientType=0);
+	background-color: #0061a7;
+}
+
+.myButton2:active {
+	position: relative;
+	top: 1px;
+}
 </style>
+
 <% String nomeUtente = "" + session.getAttribute("username"); %>
 <body>
 	<div style="left: 40%" class="bookmark">
 		<p style="right: 40px; position: relative;">Le mie statistiche</p>
 	</div>
 	<a class="btn btn-info" onclick="logout()"
-		style="position: absolute; top: 8px; left: 16px; font-size: 18px;">
+		style="position: absolute; top: 8px; left: 16px; font-size: 18px
+		    outline: none;
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+ font: bold 18px Arial, Helvetica, sans-serif;
+ color: #fff;
+ padding: 20px 20px;
+ border: solid 1px #0076a3;
+ background: #0095cd;
+		;">
 		Log out <%= nomeUtente %></a>
+
+
 	<h1>
 		<span>S</span><span>M</span><span>I</span><span>L</span><span>E</span>
-
 	</h1>
 
 	<div>
@@ -153,23 +306,6 @@
 						<div class="bottom"></div>
 						<div class="front">
 
-							<div class="spine">Statistiche</div>
-						</div>
-						<div class="left"></div>
-						<div class="right" data-title="Statistiche">
-							<div class="cover"></div>
-							<div class="contents">
-								<p>
-									Statistiche <small> </small>
-							</div>
-						</div>
-						<div class="top"></div>
-					</div>
-				</label> <label class="block b7" for="book2">
-					<div class="block-inner">
-						<div class="back"></div>
-						<div class="bottom"></div>
-						<div class="front">
 							<div class="spine">Modulo di Matematica</div>
 						</div>
 						<div class="left"></div>
@@ -184,7 +320,7 @@
 						</div>
 						<div class="top"></div>
 					</div>
-				</label> <label class="block b8" for="book3">
+				</label> <label class="block b7" for="book2">
 					<div class="block-inner">
 						<div class="back"></div>
 						<div class="bottom"></div>
@@ -195,7 +331,26 @@
 						<div class="right" data-title="Italiano">
 							<div class="cover"></div>
 							<div class="contents">
-								<p>Esercizi della Lingua Italiana</p>
+								<p>Esercizi della lingua italiana</p>
+								<a href="#" class="myButton">Facile</a> <a href="#"
+									class="myButton1">Medio</a> <a href="#" class="myButton2">Difficile</a>
+
+							</div>
+						</div>
+						<div class="top"></div>
+					</div>
+				</label> <label class="block b8" for="book3">
+					<div class="block-inner">
+						<div class="back"></div>
+						<div class="bottom"></div>
+						<div class="front">
+							<div class="spine">Modulo di logica</div>
+						</div>
+						<div class="left"></div>
+						<div class="right" data-title="Logica">
+							<div class="cover"></div>
+							<div class="contents">
+								<p>Esercizi di logica</p>
 								<a href="#" class="myButton">Facile</a> <a href="#"
 									class="myButton1">Medio</a> <a href="#" class="myButton2">Difficile</a>
 							</div>
@@ -207,13 +362,13 @@
 						<div class="back"></div>
 						<div class="bottom"></div>
 						<div class="front">
-							<div class="spine">Modulo di Logica</div>
+							<div class="spine">English test</div>
 						</div>
 						<div class="left"></div>
-						<div class="right" data-title="Esercizi di Logica">
+						<div class="right" data-title="English">
 							<div class="cover"></div>
 							<div class="contents">
-								<p>Logica</p>
+								<p>English test</p>
 								<a href="#" class="myButton">Facile</a> <a href="#"
 									class="myButton1">Medio</a> <a href="#" class="myButton2">Difficile</a>
 							</div>
@@ -225,15 +380,14 @@
 						<div class="back"></div>
 						<div class="bottom"></div>
 						<div class="front">
-							<div class="spine">English Test</div>
+							<div class="spine">Work in progress</div>
 						</div>
 						<div class="left"></div>
-						<div class="right" data-title="English">
+						<div class="right" data-title="Work in progress">
 							<div class="cover"></div>
 							<div class="contents">
-								<p>English Test</p>
-								<a href="#" class="myButton">Facile</a> <a href="#"
-									class="myButton1">Medio</a> <a href="#" class="myButton2">Difficile</a>
+								<p>Ci stiamo lavorando...</p>
+
 							</div>
 						</div>
 						<div class="top"></div>
@@ -342,7 +496,8 @@
 					</div>
 				</label>
 			</div>
-			<br> <input type="reset" value="Chiudi" />
+			<br> <input type="reset" value="Chiudi"
+				style="background-color: #87cefa" />
 		</form>
 
 	</div>
