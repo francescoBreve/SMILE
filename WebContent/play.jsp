@@ -258,7 +258,7 @@
 <% String nomeUtente = "" + session.getAttribute("username"); %>
 <body>
 	<div style="left: 40%" class="bookmark" onclick="myStats()">
-		<p style="position: relative;">Le mie statistiche</p>
+		<p style="position: relative; font-family:Comic Sans MS;">Le mie statistiche</p>
 	</div>
 	<a class="btn btn-info" onclick="logout()"
 		style="position: absolute; top: 8px; left: 16px; font-size: 18px
@@ -271,6 +271,7 @@
  padding: 20px 20px;
  border: solid 1px #0076a3;
  background: #0095cd;
+font-family:Comic Sans MS;
 		;">
 		Log out <%= nomeUtente %></a>
 
@@ -404,10 +405,10 @@
 						<div class="back"></div>
 						<div class="bottom"></div>
 						<div class="front">
-							<div class="spine">English test</div>
+							<div class="spine">Modulo della lingua inglese</div>
 						</div>
 						<div class="left"></div>
-						<div class="right" data-title="English">
+						<div class="right" data-title="Modulo dell lingua Inglese">
 							<div class="cover"></div>
 							<div class="contents">
 								<p>English test</p>
