@@ -153,6 +153,8 @@
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80b5ea',
 		endColorstr='#bddbfa', GradientType=0);
 	background-color: #80b5ea;
+	text-decoration: none;
+	color:white;
 }
 
 .myButton:active {
@@ -200,6 +202,8 @@
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5',
 		endColorstr='#79bbff', GradientType=0);
 	background-color: #378de5;
+	text-decoration: none;
+	color:white;
 }
 
 .myButton1:active {
@@ -247,6 +251,8 @@
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7',
 		endColorstr='#007dc1', GradientType=0);
 	background-color: #0061a7;
+	text-decoration: none;
+	color:white;
 }
 
 .myButton2:active {
@@ -272,7 +278,7 @@
  border: solid 1px #0076a3;
  background: #0095cd;
 		;">
-		Log out <%= nomeUtente %></a>
+		Disconnettiti</a>
 
 
 	<h1>
@@ -352,7 +358,7 @@
 						</div>
 						<div class="left"></div>
 						<div class="right" data-title="Matematica">
-							<div class="cover"></div>
+						<div class="cover"></div>
 							<div class="contents">
 								<p>Esercizi di Matematica</p>
 								<a href="#" class="myButton">Facile</a> <a href="#"
@@ -539,7 +545,7 @@
 				</label>
 			</div>
 			<br> <input type="reset" value="Chiudi"
-				style="background-color: #87cefa" />
+				style="background-color: #87cefa; cursor:pointer;" />
 		</form>
 
 	</div>
