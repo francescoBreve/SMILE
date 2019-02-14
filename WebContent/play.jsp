@@ -36,81 +36,71 @@
 <link rel="stylesheet" href="textAnimatedPlay.css" type="text/css">
 
 <script type="text/javascript">
-	
-	function logout(){
+	function logout() {
 		var confirm = window.confirm("Vuoi effettuare il logout?");
-		if(confirm){	
-				$.ajax({
-					url: "Logout",
-					method: "POST",
-					success: function(){
-						alert("Logout avvenuto con successo");
-						window.location.href = "index.html";
-					}
-				});
-			}
+		if (confirm) {
+			$.ajax({
+				url : "Logout",
+				method : "POST",
+				success : function() {
+					alert("Logout avvenuto con successo");
+					window.location.href = "index.html";
+				}
+			});
 		}
-	function myStats(){
-		alert("test");
 	}
-	
+	function myStats() {
+		window.location.href = "StatFetcher";
+	}
 </script>
 
 <style>
 .bookmark {
-  position: relative;
-  top: 0;
-  right: 20%;
-  height: 6em;
-  width: 5em;
-  background-color: red;
-  background-image:
-    linear-gradient(
-      hsla(0, 0%, 100%, 0),
-      hsla(0, 0%, 100%, 0.5) 5px,
-      hsla(0, 0%, 100%, 0) 25px);
-  -webkit-filter: drop-shadow(0 2px 6px hsla(0, 0%, 0%, 0.75));
-  box-sizing: border-box;
-  padding-top: 50px;
-  color: white;
-  font-size: 1.5em;
-  text-shadow: 0 -1px 0 hsla(0, 0%, 0%, 0.5);
-}
-.bookmark:before,
-.bookmark:after{
-  content: '';
-  display: block;
-  position: absolute;
-}
-.bookmark:before {
-  bottom: -50%;
-  height: 100%;
-  width: 100%;
-  background-image:
-    linear-gradient(
-      -45deg,
-      transparent 50%,
-      red 50%),
-    linear-gradient(
-      45deg,
-      transparent 50%,
-      red 50%);
-  z-index: -1;
-}
-.bookmark:after {
-  height: 136.5%;
-  width: 88%;
-  left: 6%;
-  top: 0;
-  border-style: dashed;
-  border-color: yellow;
-  border-width: 0 1px;
-  pointer-events: none;
+	position: relative;
+	top: 0;
+	right: 20%;
+	height: 6em;
+	width: 5em;
+	background-color: red;
+	background-image: linear-gradient(hsla(0, 0%, 100%, 0),
+		hsla(0, 0%, 100%, 0.5) 5px, hsla(0, 0%, 100%, 0) 25px);
+	-webkit-filter: drop-shadow(0 2px 6px hsla(0, 0%, 0%, 0.75));
+	box-sizing: border-box;
+	padding-top: 50px;
+	color: white;
+	font-size: 1.5em;
+	text-shadow: 0 -1px 0 hsla(0, 0%, 0%, 0.5);
 }
 
-.bookmark:hover{
- height: 30%;
- cursor: pointer;
+.bookmark:before, .bookmark:after {
+	content: '';
+	display: block;
+	position: absolute;
+}
+
+.bookmark:before {
+	bottom: -50%;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(-45deg, transparent 50%, red 50%),
+		linear-gradient(45deg, transparent 50%, red 50%);
+	z-index: -1;
+}
+
+.bookmark:after {
+	height: 136.5%;
+	width: 88%;
+	left: 6%;
+	top: 0;
+	border-style: dashed;
+	border-color: yellow;
+	border-width: 0 1px;
+	pointer-events: none;
+}
+
+.bookmark:hover {
+	height: 30%;
+	cursor: pointer;
 }
 
 .myButton {
@@ -154,7 +144,7 @@
 		endColorstr='#bddbfa', GradientType=0);
 	background-color: #80b5ea;
 	text-decoration: none;
-	color:white;
+	color: white;
 }
 
 .myButton:active {
@@ -203,7 +193,7 @@
 		endColorstr='#79bbff', GradientType=0);
 	background-color: #378de5;
 	text-decoration: none;
-	color:white;
+	color: white;
 }
 
 .myButton1:active {
@@ -252,7 +242,7 @@
 		endColorstr='#007dc1', GradientType=0);
 	background-color: #0061a7;
 	text-decoration: none;
-	color:white;
+	color: white;
 }
 
 .myButton2:active {
@@ -261,7 +251,9 @@
 }
 </style>
 
-<% String nomeUtente = "" + session.getAttribute("username"); %>
+<%
+	String nomeUtente = "" + session.getAttribute("username");
+%>
 <body>
 	<div style="left: 40%" class="bookmark" onclick="myStats()">
 		<p style="position: relative; font-family:Comic Sans MS;">Le mie statistiche</p>
@@ -359,7 +351,7 @@ font-family:Comic Sans MS;
 						</div>
 						<div class="left"></div>
 						<div class="right" data-title="Matematica">
-						<div class="cover"></div>
+							<div class="cover"></div>
 							<div class="contents">
 								<p>Esercizi di Matematica</p>
 								<a href="#" class="myButton">Facile</a> <a href="#"
@@ -546,7 +538,7 @@ font-family:Comic Sans MS;
 				</label>
 			</div>
 			<br> <input type="reset" value="Chiudi"
-				style="background-color: #87cefa; cursor:pointer;" />
+				style="background-color: #87cefa; cursor: pointer;" />
 		</form>
 
 	</div>

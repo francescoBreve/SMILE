@@ -32,7 +32,7 @@ public class Login extends HttpServlet {
 				session.setAttribute("username",u.getUsername());
 				session.setAttribute("email", u.getEmail());
 				logged = true;
-				System.out.println("Nuovo utente loggato: " + logemail);
+				System.out.println("Nuovo utente loggato: " + session.getAttribute("email"));
 			}
 		}
 		if(logged) {

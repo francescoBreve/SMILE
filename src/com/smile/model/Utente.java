@@ -19,6 +19,10 @@ public class Utente {
 		stats = new ArrayList<Statistica>();
 	}
 	
+	public void addPartita(Statistica x) {
+		stats.add(x);
+	}
+	
 	public String getUsername() {
 		return username;
 	}

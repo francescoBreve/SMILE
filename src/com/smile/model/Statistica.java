@@ -14,5 +14,12 @@ public class Statistica {
 		data = new GregorianCalendar();
 	}
 	
+	public Statistica(String nomeGioco, int punteggio, long tempoMills) {
+		this.nomeGioco = nomeGioco;
+		this.punteggio = punteggio;
+		this.tempoMills = tempoMills;
+		data = new GregorianCalendar();
+	}
+	
 
 }
