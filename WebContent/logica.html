@@ -29,6 +29,7 @@
 
 
 <title>Modulo di Logica</title>
+
 </head>
 <style>
 body {
@@ -36,7 +37,6 @@ body {
 	justify-content: center;
 	text-align: center;
 	background: beige;
-	overflow: hidden;
 }
 </style>
 </head>
@@ -57,23 +57,39 @@ body {
 	</h1>
 
 	<h3 style="padding-left: 0%; position: absolute; top: 25%">
+
+<!-- Form del timer -->
+	<span style="font-size:200%"id="chronotime">0:00:00:00</span>
+	<form name="chronoForm">
+		<input type="button" hidden name="startstop" value="start!"
+			onClick="chronoStart()" /> <input type="button" hidden name="reset"
+			value="reset!" onClick="chronoReset()" />
+	</form>
+<!-- fine form timer -->
+
+
+	<h3 style="padding-left: 0%; position: absolute;">
 		Benvenuto nel Modulo di Logica!<br>
 	</h3>
 
 	<dl style="position: absolute;">
 		<dl>
-			<div class="alert alert-success" style="margin-top: 40%">
-				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
-					1</h3>
-				<p>La mamma di Timo ha quattro figli: Bucaneve,Ginepro e
-					Rosmarino. Come si chiama il quarto figlio?</p>
+			<div class="alert alert-success" style="margin-top: 20%">
+				<h3 class="alert-heading"style="font-family:Comic Sans MS">Domanda 1</h3>
+				<p>La mamma di Timo ha quattro figli: Bucaneve,Ginepro e Rosmarino. Come si chiama il quarto figlio?</p>
 				<hr>
-
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">PREZZEMOLINO</button>
-					<button type="button" class="btn btn-outline-info">BIANCANEVE</button>
-					<button type="button" class="btn btn-outline-info">Timo</button>
-				</p>
+				
+<!-- Div da copiare e cambiare le risposte -->
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q1" id="1q1" type="radio">Prezzemolino
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q1" id="1q2" type="radio">Bucaneve
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q1" id="1q3" type="radio">Timo
+					</label>
+				</div>
+<!-- fine div -->
 
 			</div>
 		</dl>
@@ -82,15 +98,19 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					2</h3>
-				<p>Una pigna pesa un chilo più mezza pigna. Quanto pesa una
+				<p>Una pigna pesa un chilo piï¿½ mezza pigna. Quanto pesa una
 					pigna?</p>
 				<hr>
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">2 kili</button>
-					<button type="button" class="btn btn-outline-info">2 kili
-						e mezzo</button>
-					<button type="button" class="btn btn-outline-info">3 kili</button>
-				</p>
+
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q2" type="radio" id="2q1">2 Kili
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q2" type="radio" id="2q2">2 Kili e mezzo
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q2" type="radio" id="2q3">3 Kili
+					</label>
+				</div>
 
 			</div>
 		</dl>
@@ -102,11 +122,16 @@ body {
 				<p>Se hai 52 libri da sistemare in una libreria ed in ciascun
 					ripiano ci stanno 10 libri,quanti ripiani ci serviranno?</p>
 				<hr>
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">5</button>
-					<button type="button" class="btn btn-outline-info">10</button>
-					<button type="button" class="btn btn-outline-info">6</button>
-				</p>
+
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q3" type="radio" id="3q1">5
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q3" type="radio" id="3q2">10
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q3" type="radio" id="3q3">6
+					</label>
+				</div>
 
 			</div>
 		</dl>
@@ -115,7 +140,7 @@ body {
 		<dl>
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
-					3</h3>
+					4</h3>
 				<p>
 					Maria esce a fare compere. Nella borsa ha 50 euro.<br> Va al
 					supermercato e spende 25 euro mentre in farmacia spende 13 euro.<br>
@@ -127,12 +152,16 @@ body {
 					ha ora Maria?
 				</p>
 				<hr>
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">15</button>
-					<button type="button" class="btn btn-outline-info">17</button>
-					<button type="button" class="btn btn-outline-info">5</button>
-				</p>
 
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q4" type="radio" id="4q1">15
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q4" type="radio" id="4q2">17
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q4" type="radio" id="4q3">5
+					</label>
+				</div>
 			</div>
 		</dl>
 
@@ -141,22 +170,28 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					5</h3>
-				<img src="WebContent/images/foto.jpg">
+				<img src="images/foto.jpg">
 				<hr>
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">25</button>
-					<button type="button" class="btn btn-outline-info">30</button>
-					<button type="button" class="btn btn-outline-info">45</button>
-				</p>
+
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q5" type="radio" id="5q1">25
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q5" type="radio" id="5q2">30
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q5" type="radio" id="5q3">45
+					</label>
+				</div>
 
 			</div>
 		</dl>
 		<dl>
-			<button type="button" class="btn btn-primary"
-				style="font-family: Comic Sans MS">VERIFICA</button>
+			<button type="button" onclick="calcolaPunteggio();"
+				class="btn btn-primary" style="font-family: Comic Sans MS">VERIFICA</button>
 		</dl>
 	</dl>
 
 </body>
-<script src="log.js"></script>
+
+<script src="js/logica.js"></script>
 </html>
