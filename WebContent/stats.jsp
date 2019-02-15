@@ -34,7 +34,7 @@
 	crossorigin="anonymous"></script>
 
 </head>
-<body style"background:beige;">
+<body>
 	<% Utente loggedUser = (Utente) request.getAttribute("utente");
 	%>
 	<%= loggedUser %>

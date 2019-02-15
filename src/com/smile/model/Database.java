@@ -15,14 +15,13 @@ public class Database {
 	}
 	
 	public static Utente getUserByEmail(String email) {
+		Utente toReturn = null; 
 		for (int i = 0; i < utenti.size(); i++) {
 			if(utenti.get(i).getEmail().equals(email)) {
-				System.out.println(utenti.get(i));
-				return utenti.get(i);
-				
+				toReturn = utenti.get(i);
 			}
 		}
-		return null;
+		return toReturn;
 	}
 	
 }

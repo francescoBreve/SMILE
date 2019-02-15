@@ -20,8 +20,8 @@ public class StatFetcher extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session=request.getSession();
 		String emailUser = "" + session.getAttribute("email");
-		System.out.println(emailUser);
-		Utente x = Database.getUserByEmail("emailUser");
+		System.out.println("stat fetcher:" + emailUser);
+		Utente x = Database.getUserByEmail(emailUser);
 		System.out.println(x);
 		
 		request.setAttribute("utente", x);	
