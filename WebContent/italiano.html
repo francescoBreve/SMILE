@@ -39,16 +39,34 @@ body {
 	overflow: hidden;
 }
 </style>
+
+<script type="text/javascript">
+	function home() {
+		window.location.href = "play.jsp";
+	}
+</script>
+
 </head>
+<link rel="stylesheet" href="textAnimatedPlay.css" type="text/css">
 <body style="overflow: auto">
 
-	<h3 style="padding-left: 0%; position: absolute; font-family:Comic Sans MS">
-		BENVENUTO NEL MODULO DI ITALIANO!<br>
+	<h1
+		style="position: relative; right: 40%; position: absolute; z-index: 1">
+		<div onclick="home()" style="cursor: pointer">
+			<span>S</span><span>M</span><span>I</span><span>L</span><span>E</span>
+		</div>
+	</h1>
+	
+	
+	<h3 style="padding-left: 0%; position: absolute; top: 25%">
+		Benvenuto nel Modulo della lingua Italiana!<br>
 	</h3>
 
-	<dl>
-		<dl> <div class="alert alert-success" style="margin-top: 20%;">
-				<h4 class="alert-heading" style="font-family:Comic Sans MS">Domanda 1</h4>
+	<dl style="position: absolute;">
+		<dl>
+			<div class="alert alert-success" style="margin-top: 50%;">
+				<h4 class="alert-heading" style="font-family: Comic Sans MS">Domanda
+					1</h4>
 				<p>INSERISCI L'ARTICOLO CORRETTO: __ CANE GIOCA IN GIARDINO</p>
 				<hr>
 				<p class="mb-0">
@@ -57,10 +75,13 @@ body {
 					<button type="button" class="btn btn-outline-info">LA</button>
 				</p>
 
-			</div></dl>
+			</div>
+		</dl>
 
-		<dl><div class="alert alert-success" style="margin-top: 20%">
-				<h3 class="alert-heading"style="font-family:Comic Sans MS">Domanda 2</h3>
+		<dl>
+			<div class="alert alert-success" style="margin-top: 20%">
+				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
+					2</h3>
 				<p>COME TI CHIAMI? __ GIULIANA</p>
 				<hr>
 				<p class="mb-0">
@@ -72,10 +93,13 @@ body {
 						CHIAMO</button>
 				</p>
 
-			</div></dl>
+			</div>
+		</dl>
 
-		<dl><div class="alert alert-success" style="margin-top: 20%">
-				<h3 class="alert-heading"style="font-family:Comic Sans MS">Domanda 3</h3>
+		<dl>
+			<div class="alert alert-success" style="margin-top: 20%">
+				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
+					3</h3>
 				<p>COME STAI?</p>
 				<hr>
 				<p class="mb-0">
@@ -84,15 +108,18 @@ body {
 					<button type="button" class="btn btn-outline-info">MIGLIORE</button>
 				</p>
 
-			</div></dl>
+			</div>
+		</dl>
 
 
 
-		<dl><div class="alert alert-success" style="margin-top: 20%">
-				<h3 class="alert-heading"style="font-family:Comic Sans MS">Domanda 4</h3>
+		<dl>
+			<div class="alert alert-success" style="margin-top: 20%">
+				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
+					4</h3>
 				<img
-					src="https://cultura.biografieonline.it/wp-content/uploads/2016/09/Aquilone-poesia.jpg"
-					width="150" height="150">
+					src="images/Aquilone.jpg"
+					width="200" height="200">
 				<hr>
 				<p class="mb-0">
 					<button type="button" class="btn btn-outline-info">ACQUILONE</button>
@@ -100,10 +127,13 @@ body {
 					<button type="button" class="btn btn-outline-info">AQULONE1</button>
 				</p>
 
-			</div></dl>
+			</div>
+		</dl>
 
-		<dl><div class="alert alert-success" style="margin-top: 20%">
-				<h3 class="alert-heading"style="font-family:Comic Sans MS">Domanda 5</h3>
+		<dl>
+			<div class="alert alert-success" style="margin-top: 20%">
+				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
+					5</h3>
 				<p>PIU' DI UNO: UNA STREGA</p>
 				<hr>
 				<p class="mb-0">
@@ -115,10 +145,12 @@ body {
 						STREGA</button>
 				</p>
 
-			</div></dl>
-			<dl>
-			<button type="button" class="btn btn-primary"style="font-family:Comic Sans MS">VERIFICA</button>
-			</dl>
+			</div>
+		</dl>
+		<dl>
+			<button type="button" class="btn btn-primary"
+				style="font-family: Comic Sans MS">VERIFICA</button>
+		</dl>
 	</dl>
 
 </body>

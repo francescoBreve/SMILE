@@ -354,8 +354,8 @@ font-family:Comic Sans MS;
 							<div class="cover"></div>
 							<div class="contents">
 								<p>Esercizi di Matematica</p>
-								<a href="#" class="myButton">Facile</a> <a href="#"
-									class="myButton1">Medio</a> <a href="#" class="myButton2">Difficile</a>
+								<a href="matematica.html" class="myButton">Facile</a> <a href="matematica.html"
+									class="myButton1">Medio</a> <a href="matematica.html" class="myButton2">Difficile</a>
 
 							</div>
 						</div>
@@ -373,8 +373,8 @@ font-family:Comic Sans MS;
 							<div class="cover"></div>
 							<div class="contents">
 								<p>Esercizi della lingua italiana</p>
-								<a href="#" class="myButton">Facile</a> <a href="#"
-									class="myButton1">Medio</a> <a href="#" class="myButton2">Difficile</a>
+								<a href="italiano.html" class="myButton">Facile</a> <a href="italiano.html"
+									class="myButton1">Medio</a> <a href="italiano.html" class="myButton2">Difficile</a>
 
 							</div>
 						</div>
@@ -392,8 +392,8 @@ font-family:Comic Sans MS;
 							<div class="cover"></div>
 							<div class="contents">
 								<p>Esercizi di logica</p>
-								<a href="#" class="myButton">Facile</a> <a href="#"
-									class="myButton1">Medio</a> <a href="#" class="myButton2">Difficile</a>
+								<a href="logica.html" class="myButton">Facile</a> <a href="logica.html"
+									class="myButton1">Medio</a> <a href="logica.html" class="myButton2">Difficile</a>
 							</div>
 						</div>
 						<div class="top"></div>
@@ -410,8 +410,8 @@ font-family:Comic Sans MS;
 							<div class="cover"></div>
 							<div class="contents">
 								<p>English test</p>
-								<a href="#" class="myButton">Facile</a> <a href="#"
-									class="myButton1">Medio</a> <a href="#" class="myButton2">Difficile</a>
+								<a href="inglese.html" class="myButton">Facile</a> <a href="inglese.html"
+									class="myButton1">Medio</a> <a href="inglese.html" class="myButton2">Difficile</a>
 							</div>
 						</div>
 						<div class="top"></div>

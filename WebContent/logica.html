@@ -40,18 +40,35 @@ body {
 }
 </style>
 </head>
+<script type="text/javascript">
+	function home() {
+		window.location.href = "play.jsp";
+	}
+</script>
+
+<link rel="stylesheet" href="textAnimatedPlay.css" type="text/css">
 <body style="overflow: auto">
 
-	<h3 style="padding-left: 0%; position: absolute;">
+	<h1
+		style="position: relative; right: 40%; position: absolute; z-index: 1">
+		<div onclick="home()" style="cursor: pointer">
+			<span>S</span><span>M</span><span>I</span><span>L</span><span>E</span>
+		</div>
+	</h1>
+
+	<h3 style="padding-left: 0%; position: absolute; top: 25%">
 		Benvenuto nel Modulo di Logica!<br>
 	</h3>
 
-	<dl>
+	<dl style="position: absolute;">
 		<dl>
-			<div class="alert alert-success" style="margin-top: 20%">
-				<h3 class="alert-heading"style="font-family:Comic Sans MS">Domanda 1</h3>
-				<p>La mamma di Timo ha quattro figli: Bucaneve,Ginepro e Rosmarino. Come si chiama il quarto figlio?</p>
+			<div class="alert alert-success" style="margin-top: 40%">
+				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
+					1</h3>
+				<p>La mamma di Timo ha quattro figli: Bucaneve,Ginepro e
+					Rosmarino. Come si chiama il quarto figlio?</p>
 				<hr>
+
 				<p class="mb-0">
 					<button type="button" class="btn btn-outline-info">PREZZEMOLINO</button>
 					<button type="button" class="btn btn-outline-info">BIANCANEVE</button>
@@ -63,12 +80,15 @@ body {
 
 		<dl>
 			<div class="alert alert-success" style="margin-top: 20%">
-				<h3 class="alert-heading"style="font-family:Comic Sans MS">Domanda 2</h3>
-				<p>Una pigna pesa un chilo più mezza pigna. Quanto pesa una pigna?</p>
+				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
+					2</h3>
+				<p>Una pigna pesa un chilo più mezza pigna. Quanto pesa una
+					pigna?</p>
 				<hr>
 				<p class="mb-0">
 					<button type="button" class="btn btn-outline-info">2 kili</button>
-					<button type="button" class="btn btn-outline-info">2 kili e mezzo</button>
+					<button type="button" class="btn btn-outline-info">2 kili
+						e mezzo</button>
 					<button type="button" class="btn btn-outline-info">3 kili</button>
 				</p>
 
@@ -77,8 +97,10 @@ body {
 
 		<dl>
 			<div class="alert alert-success" style="margin-top: 20%">
-				<h3 class="alert-heading"style="font-family:Comic Sans MS">Domanda 3</h3>
-				<p>Se hai 52 libri da sistemare in una libreria ed in ciascun ripiano ci stanno 10 libri,quanti ripiani ci serviranno?</p>
+				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
+					3</h3>
+				<p>Se hai 52 libri da sistemare in una libreria ed in ciascun
+					ripiano ci stanno 10 libri,quanti ripiani ci serviranno?</p>
 				<hr>
 				<p class="mb-0">
 					<button type="button" class="btn btn-outline-info">5</button>
@@ -92,12 +114,17 @@ body {
 
 		<dl>
 			<div class="alert alert-success" style="margin-top: 20%">
-				<h3 class="alert-heading"style="font-family:Comic Sans MS">Domanda 3</h3>
-				<p>Maria esce a fare compere. Nella borsa ha 50 euro.<br> Va al supermercato e spende 25 euro mentre in farmacia spende 13 euro.<br>
-				   Maria va dalla nonna,e la aiuta con degli scatoli,per ringraziarla gli regala 5 euro.<br> Mentre torna a casa ,Maria decide di fermarsi
-				   a prendere una pizzetta nel bar, e spende 2 euro.<br> Quando torna a casa da alla mamma tutti i soldi che gli sono rimasti.<br>
-				   La mamma gli regala 5 euro<br>
-				   Quanti soldi ha ora Maria?
+				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
+					3</h3>
+				<p>
+					Maria esce a fare compere. Nella borsa ha 50 euro.<br> Va al
+					supermercato e spende 25 euro mentre in farmacia spende 13 euro.<br>
+					Maria va dalla nonna,e la aiuta con degli scatoli,per ringraziarla
+					gli regala 5 euro.<br> Mentre torna a casa ,Maria decide di
+					fermarsi a prendere una pizzetta nel bar, e spende 2 euro.<br>
+					Quando torna a casa da alla mamma tutti i soldi che gli sono
+					rimasti.<br> La mamma gli regala 5 euro<br> Quanti soldi
+					ha ora Maria?
 				</p>
 				<hr>
 				<p class="mb-0">
@@ -112,7 +139,8 @@ body {
 
 		<dl>
 			<div class="alert alert-success" style="margin-top: 20%">
-				<h3 class="alert-heading"style="font-family:Comic Sans MS">Domanda 5</h3>
+				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
+					5</h3>
 				<img src="WebContent/images/foto.jpg">
 				<hr>
 				<p class="mb-0">
@@ -124,9 +152,11 @@ body {
 			</div>
 		</dl>
 		<dl>
-			<button type="button" class="btn btn-primary"style="font-family:Comic Sans MS">VERIFICA</button>
+			<button type="button" class="btn btn-primary"
+				style="font-family: Comic Sans MS">VERIFICA</button>
 		</dl>
 	</dl>
 
 </body>
+<script src="log.js"></script>
 </html>

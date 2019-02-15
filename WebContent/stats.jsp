@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-    <%@ page import="com.smile.model.Utente" %>
+	pageEncoding="ISO-8859-1"%>
+<%@ page import="com.smile.model.Utente"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Le mie statistiche</title>
 
 <link rel="stylesheet" href="play.css" type="text/css">
 <link rel="stylesheet"
@@ -34,10 +34,50 @@
 	crossorigin="anonymous"></script>
 
 </head>
+
+<script type="text/javascript">
+	function home() {
+		window.location.href = "play.jsp";
+	}
+</script>
+
+<link rel="stylesheet" href="textAnimatedPlay.css" type="text/css">
+
+<style>
+body {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	background: beige;
+	overflow: hidden;
+}
+</style>
 <body>
-	<% Utente loggedUser = (Utente) request.getAttribute("utente");
-	%>
-	<%= loggedUser %>
-	 Hello world
+
+	<h1
+		style="position: relative; right: 40%; position: absolute; z-index: 1">
+		<div onclick="home()" style="cursor: pointer">
+			<span>S</span><span>M</span><span>I</span><span>L</span><span>E</span>
+		</div>
+	</h1>
+
+<ul  class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="margin-top:10%;margin-left:0%; z-index:2 ;position: absolute">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" style="font-family:Comic Sans MS">Statistiche</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"style="font-family:Comic Sans MS">Statistiche Avanzate</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false"style="font-family:Comic Sans MS">Suggerimenti</a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent" style="margin-top: 15%">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" > SCRIVERE QUA PER STATISTICHE</div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">SCRIVERE QUA PER STTISTICHE AVANZATE</div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">SCRIVERE QUA PER SUGGERIMENTI</div>
+</div>
+
 </body>
+
 </html>
