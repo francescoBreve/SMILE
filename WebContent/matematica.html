@@ -29,6 +29,7 @@
 
 
 <title>Modulo di Matematica</title>
+
 </head>
 <style>
 body {
@@ -36,18 +37,46 @@ body {
 	justify-content: center;
 	text-align: center;
 	background: beige;
-	overflow: hidden;
 }
 </style>
 </head>
 <script type="text/javascript">
 	function home() {
-		window.location.href = "play.jsp";
+		var r = window
+				.confirm("Sei sicuro di voler tornare alla home? Tutti i progressi andranno persi!");
+		if (r) {
+			window.location.href = "play.jsp";
+		}
+
 	}
 </script>
 
-<link rel="stylesheet" href="textAnimatedPlay.css" type="text/css">
+
+
+
+<link rel="stylesheet" href="textAnimatedPlayEdited.css" type="text/css">
 <body style="overflow: auto">
+
+
+	<div class="simpleSpan"
+		style="position: fixed; margin-left: 40%; z-index: 99">
+
+		<span class="border border-primary"
+			style="position: absolute; color: black; text-shadow: none;"
+			id="chronotime">0:00:00:00</span>
+		<form name="chronoForm">
+			<input type="button" hidden name="startstop" value="start!"
+				onClick="chronoStart()" /> <input type="button" hidden name="reset"
+				value="reset!" onClick="chronoReset()" />
+		</form>
+	</div>
+
+
+
+
+	<h3 style="padding-left: 0%; position: absolute; top: 25%">
+		Benvenuto nel Modulo di Matematica!<br>
+	</h3>
 
 	<h1
 		style="position: relative; right: 40%; position: absolute; z-index: 1">
@@ -56,22 +85,27 @@ body {
 		</div>
 	</h1>
 
-	<h3 style="padding-left: 0%; position: absolute; top: 25%">
-		Benvenuto nel Modulo di Matematica!<br>
-	</h3>
+
 
 	<dl style="position: absolute;">
 		<dl>
-			<div class="alert alert-success" style="margin-top: 45%">
+			<div class="alert alert-success" style="margin-top: 80%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					1</h3>
-				<p>6 E' MINORE < DI</p>
+				<p>6 e' minore < di </p>
 				<hr>
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">1-2-3-4</button>
-					<button type="button" class="btn btn-outline-info">6-7-8-9</button>
-					<button type="button" class="btn btn-outline-info">7-8-9</button>
-				</p>
+
+			
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q1" id="1q1" type="radio">1-2-3-4
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q1" id="1q2" type="radio">6-7-8-9
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q1" id="1q3" type="radio">7-8-9
+					</label>
+				</div>
+			
 
 			</div>
 		</dl>
@@ -80,13 +114,18 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					2</h3>
-				<p>QUANTO FA QUESTA ADDIZIONE: 5+2+1</p>
+				<p>Quanto fa questa addizione: 5+2+1</p>
 				<hr>
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">5</button>
-					<button type="button" class="btn btn-outline-info">9</button>
-					<button type="button" class="btn btn-outline-info">8</button>
-				</p>
+
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q2" type="radio" id="2q1">5
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q2" type="radio" id="2q2">8
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q2" type="radio" id="2q3">9
+					</label>
+				</div>
 
 			</div>
 		</dl>
@@ -95,13 +134,18 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					3</h3>
-				<p>QUANTO FA QUESTA SOTTRAZIONE 16-5</p>
+				<p>Quanto fa questa sottrazione: 16-5</p>
 				<hr>
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">11</button>
-					<button type="button" class="btn btn-outline-info">10</button>
-					<button type="button" class="btn btn-outline-info">12</button>
-				</p>
+
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q3" type="radio" id="3q1">11
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q3" type="radio" id="3q2">10
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q3" type="radio" id="3q3">15
+					</label>
+				</div>
 
 			</div>
 		</dl>
@@ -111,20 +155,21 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					4</h3>
-				<img
-					src="images/palloni.jpg"
-					width="300" height="150">
-				<p>IL RAGGRUPPAMENTO E'</p>
-				<hr>
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">GRUPPI:
-						4 UNITA: 1</button>
-					<button type="button" class="btn btn-outline-info">GRUPPI:
-						3 UNITA: 0</button>
-					<button type="button" class="btn btn-outline-info">GRUPPI:
-						4 UNITA: 3</button>
+						<img src="images/palloni.jpg"width="150" height="150">
+				<p>
+					Quanti palloncini ci sono?
 				</p>
+				<hr>
 
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q4" type="radio" id="4q1">10
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q4" type="radio" id="4q2">9
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q4" type="radio" id="4q3">11
+					</label>
+				</div>
 			</div>
 		</dl>
 
@@ -133,21 +178,27 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					5</h3>
-				<p>IL DOPPIO DI 4 E'</p>
+				<p> Il doppio di 4 e'</p>
 				<hr>
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">16</button>
-					<button type="button" class="btn btn-outline-info">10</button>
-					<button type="button" class="btn btn-outline-info">8</button>
-				</p>
+
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q5" type="radio" id="5q1">16
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q5" type="radio" id="5q2">10
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q5" type="radio" id="5q3">8
+					</label>
+				</div>
 
 			</div>
 		</dl>
 		<dl>
-			<button type="button" class="btn btn-primary"
-				style="font-family: Comic Sans MS" S>VERIFICA</button>
+			<button type="button" onclick="calcolaPunteggio();"
+				class="btn btn-primary" style="font-family: Comic Sans MS">VERIFICA</button>
 		</dl>
 	</dl>
-
 </body>
+
+<script src="js/matematica.js"></script>
 </html>

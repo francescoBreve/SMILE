@@ -57,155 +57,155 @@ body {
 <link rel="stylesheet" href="textAnimatedPlayEdited.css" type="text/css">
 <body style="overflow: auto">
 
+
 	<div class="simpleSpan"
 		style="position: fixed; margin-left: 40%; z-index: 99">
-		<!-- Form del timer -->
-		<span style="color: black; text-shadow: none;" id="chronotime">0:00:00:00</span>
+
+		<span class="border border-primary"
+			style="position: absolute;color: black; text-shadow: none;" id="chronotime">0:00:00:00</span>
 		<form name="chronoForm">
 			<input type="button" hidden name="startstop" value="start!"
 				onClick="chronoStart()" /> <input type="button" hidden name="reset"
 				value="reset!" onClick="chronoReset()" />
 		</form>
-		<!-- fine form timer -->
 	</div>
 
+
+
+
 	<h3 style="padding-left: 0%; position: absolute; top: 25%">
+		Benvenuto nel Modulo di Logica!<br>
+	</h3>
+
+	<h1
+		style="position: relative; right: 40%; position: absolute; z-index: 1">
+		<div onclick="home()" style="cursor: pointer">
+			<span>S</span><span>M</span><span>I</span><span>L</span><span>E</span>
+		</div>
+	</h1>
 
 
 
-		<h3 style="padding-left: 0%; position: absolute;">
-			Benvenuto nel Modulo di Logica!<br>
-		</h3>
+	<dl style="position: absolute;">
+		<dl>
+			<div class="alert alert-success" style="margin-top: 30%">
+				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
+					1</h3>
+				<p>La mamma di Timo ha quattro figli: Bucaneve,Ginepro e
+					Rosmarino. Come si chiama il quarto figlio?</p>
+				<hr>
 
-		<h1
-			style="position: relative; right: 40%; position: absolute; z-index: 1">
-			<div onclick="home()" style="cursor: pointer">
-				<span>S</span><span>M</span><span>I</span><span>L</span><span>E</span>
+			
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q1" id="1q1" type="radio">Prezzemolino
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q1" id="1q2" type="radio">Bucaneve
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q1" id="1q3" type="radio">Timo
+					</label>
+				</div>
+		
+
 			</div>
-		</h1>
-
-
-
-		<dl style="position: absolute;">
-			<dl>
-				<div class="alert alert-success" style="margin-top: 20%">
-					<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
-						1</h3>
-					<p>La mamma di Timo ha quattro figli: Bucaneve,Ginepro e
-						Rosmarino. Come si chiama il quarto figlio?</p>
-					<hr>
-
-					<!-- Div da copiare e cambiare le risposte -->
-					<div class="btn-group" data-toggle="buttons">
-						<label for="" class="btn btn-outline-info"> <input
-							name="q1" id="1q1" type="radio">Prezzemolino
-						</label> <label for="" class="btn btn-outline-info"> <input
-							name="q1" id="1q2" type="radio">Bucaneve
-						</label> <label for="" class="btn btn-outline-info"> <input
-							name="q1" id="1q3" type="radio">Timo
-						</label>
-					</div>
-					<!-- fine div -->
-
-				</div>
-			</dl>
-
-			<dl>
-				<div class="alert alert-success" style="margin-top: 20%">
-					<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
-						2</h3>
-					<p>Una pigna pesa un chilo pi� mezza pigna. Quanto pesa una
-						pigna?</p>
-					<hr>
-
-					<div class="btn-group" data-toggle="buttons">
-						<label for="" class="btn btn-outline-info"> <input
-							name="q2" type="radio" id="2q1">2 Kili
-						</label> <label for="" class="btn btn-outline-info"> <input
-							name="q2" type="radio" id="2q2">2 Kili e mezzo
-						</label> <label for="" class="btn btn-outline-info"> <input
-							name="q2" type="radio" id="2q3">3 Kili
-						</label>
-					</div>
-
-				</div>
-			</dl>
-
-			<dl>
-				<div class="alert alert-success" style="margin-top: 20%">
-					<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
-						3</h3>
-					<p>Se hai 52 libri da sistemare in una libreria ed in ciascun
-						ripiano ci stanno 10 libri,quanti ripiani ci serviranno?</p>
-					<hr>
-
-					<div class="btn-group" data-toggle="buttons">
-						<label for="" class="btn btn-outline-info"> <input
-							name="q3" type="radio" id="3q1">5
-						</label> <label for="" class="btn btn-outline-info"> <input
-							name="q3" type="radio" id="3q2">10
-						</label> <label for="" class="btn btn-outline-info"> <input
-							name="q3" type="radio" id="3q3">6
-						</label>
-					</div>
-
-				</div>
-			</dl>
-
-
-			<dl>
-				<div class="alert alert-success" style="margin-top: 20%">
-					<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
-						4</h3>
-					<p>
-						Maria esce a fare compere. Nella borsa ha 50 euro.<br> Va al
-						supermercato e spende 25 euro mentre in farmacia spende 13 euro.<br>
-						Maria va dalla nonna,e la aiuta con degli scatoli,per ringraziarla
-						gli regala 5 euro.<br> Mentre torna a casa ,Maria decide di
-						fermarsi a prendere una pizzetta nel bar, e spende 2 euro.<br>
-						Quando torna a casa da alla mamma tutti i soldi che gli sono
-						rimasti.<br> La mamma gli regala 5 euro<br> Quanti soldi
-						ha ora Maria?
-					</p>
-					<hr>
-
-					<div class="btn-group" data-toggle="buttons">
-						<label for="" class="btn btn-outline-info"> <input
-							name="q4" type="radio" id="4q1">15
-						</label> <label for="" class="btn btn-outline-info"> <input
-							name="q4" type="radio" id="4q2">17
-						</label> <label for="" class="btn btn-outline-info"> <input
-							name="q4" type="radio" id="4q3">5
-						</label>
-					</div>
-				</div>
-			</dl>
-
-
-			<dl>
-				<div class="alert alert-success" style="margin-top: 20%">
-					<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
-						5</h3>
-					<img src="images/logica1.jpg">
-					<hr>
-
-					<div class="btn-group" data-toggle="buttons">
-						<label for="" class="btn btn-outline-info"> <input
-							name="q5" type="radio" id="5q1">25
-						</label> <label for="" class="btn btn-outline-info"> <input
-							name="q5" type="radio" id="5q2">30
-						</label> <label for="" class="btn btn-outline-info"> <input
-							name="q5" type="radio" id="5q3">45
-						</label>
-					</div>
-
-				</div>
-			</dl>
-			<dl>
-				<button type="button" onclick="calcolaPunteggio();"
-					class="btn btn-primary" style="font-family: Comic Sans MS">VERIFICA</button>
-			</dl>
 		</dl>
+
+		<dl>
+			<div class="alert alert-success" style="margin-top: 20%">
+				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
+					2</h3>
+				<p>Una pigna pesa un chilo piu'mezza pigna. Quanto pesa una
+					pigna?</p>
+				<hr>
+
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q2" type="radio" id="2q1">2 Kili
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q2" type="radio" id="2q2">2 Kili e mezzo
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q2" type="radio" id="2q3">3 Kili
+					</label>
+				</div>
+
+			</div>
+		</dl>
+
+		<dl>
+			<div class="alert alert-success" style="margin-top: 20%">
+				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
+					3</h3>
+				<p>Se hai 52 libri da sistemare in una libreria ed in ciascun
+					ripiano ci stanno 10 libri,quanti ripiani ci serviranno?</p>
+				<hr>
+
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q3" type="radio" id="3q1">5
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q3" type="radio" id="3q2">10
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q3" type="radio" id="3q3">6
+					</label>
+				</div>
+
+			</div>
+		</dl>
+
+
+		<dl>
+			<div class="alert alert-success" style="margin-top: 20%">
+				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
+					4</h3>
+				<p>
+					Maria esce a fare compere. Nella borsa ha 50 euro.<br> Va al
+					supermercato e spende 25 euro mentre in farmacia spende 13 euro.<br>
+					Maria va dalla nonna,e la aiuta con degli scatoli,per ringraziarla
+					gli regala 5 euro.<br> Mentre torna a casa ,Maria decide di
+					fermarsi a prendere una pizzetta nel bar, e spende 2 euro.<br>
+					Quando torna a casa da alla mamma tutti i soldi che gli sono
+					rimasti.<br> La mamma gli regala 5 euro<br> Quanti soldi
+					ha ora Maria?
+				</p>
+				<hr>
+
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q4" type="radio" id="4q1">15
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q4" type="radio" id="4q2">17
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q4" type="radio" id="4q3">5
+					</label>
+				</div>
+			</div>
+		</dl>
+
+
+		<dl>
+			<div class="alert alert-success" style="margin-top: 20%">
+				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
+					5</h3>
+				<img src="images/logica1.jpg">
+				<hr>
+
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q5" type="radio" id="5q1">25
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q5" type="radio" id="5q2">30
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q5" type="radio" id="5q3">45
+					</label>
+				</div>
+
+			</div>
+		</dl>
+		<dl>
+			<button type="button" onclick="calcolaPunteggio();"
+				class="btn btn-primary" style="font-family: Comic Sans MS">VERIFICA</button>
+		</dl>
+	</dl>
 </body>
 
 <script src="js/logica.js"></script>

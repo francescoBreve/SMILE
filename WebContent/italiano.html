@@ -28,7 +28,8 @@
 	crossorigin="anonymous"></script>
 
 
-<title>Modulo della lingua italiana</title>
+<title>Modulo della lingua Italiana</title>
+
 </head>
 <style>
 body {
@@ -36,19 +37,45 @@ body {
 	justify-content: center;
 	text-align: center;
 	background: beige;
-	overflow: hidden;
 }
 </style>
-
+</head>
 <script type="text/javascript">
 	function home() {
-		window.location.href = "play.jsp";
-	}
+		var r = window
+				.confirm("Sei sicuro di voler tornare alla home? Tutti i progressi andranno persi!");
+		if (r) {
+			window.location.href = "play.jsp";
+		}
+
 </script>
 
-</head>
-<link rel="stylesheet" href="textAnimatedPlay.css" type="text/css">
+
+
+
+<link rel="stylesheet" href="textAnimatedPlayEdited.css" type="text/css">
 <body style="overflow: auto">
+
+
+	<div class="simpleSpan"
+		style="position: fixed; margin-left: 40%; z-index: 99">
+
+		<span class="border border-primary"
+			style="position: absolute; color: black; text-shadow: none;"
+			id="chronotime">0:00:00:00</span>
+		<form name="chronoForm">
+			<input type="button" hidden name="startstop" value="start!"
+				onClick="chronoStart()" /> <input type="button" hidden name="reset"
+				value="reset!" onClick="chronoReset()" />
+		</form>
+	</div>
+
+
+
+
+	<h3 style="padding-left: 0%; position: absolute; top: 25%">
+		Benvenuto nel Modulo della lingua Italiana! <br>
+	</h3>
 
 	<h1
 		style="position: relative; right: 40%; position: absolute; z-index: 1">
@@ -56,24 +83,27 @@ body {
 			<span>S</span><span>M</span><span>I</span><span>L</span><span>E</span>
 		</div>
 	</h1>
-	
-	
-	<h3 style="padding-left: 0%; position: absolute; top: 25%">
-		Benvenuto nel Modulo della lingua Italiana!<br>
-	</h3>
+
+
 
 	<dl style="position: absolute;">
 		<dl>
-			<div class="alert alert-success" style="margin-top: 50%;">
-				<h4 class="alert-heading" style="font-family: Comic Sans MS">Domanda
-					1</h4>
-				<p>INSERISCI L'ARTICOLO CORRETTO: __ CANE GIOCA IN GIARDINO</p>
+			<div class="alert alert-success" style="margin-top: 80%">
+				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
+					1</h3>
+				<p> Inserisci l'articolo corretto: __ cane e' in giardino </p>
+				
 				<hr>
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">LO</button>
-					<button type="button" class="btn btn-outline-info">IL</button>
-					<button type="button" class="btn btn-outline-info">LA</button>
-				</p>
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q1" id="1q1" type="radio">IL
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q1" id="1q2" type="radio">LO
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q1" id="1q3" type="radio">LA
+					</label>
+				</div>
+
 
 			</div>
 		</dl>
@@ -82,16 +112,18 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					2</h3>
-				<p>COME TI CHIAMI? __ GIULIANA</p>
+				<p>Luca e' __ :</p>
 				<hr>
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">MO
-						CHIAMO</button>
-					<button type="button" class="btn btn-outline-info">LA
-						CHIAMO</button>
-					<button type="button" class="btn btn-outline-info">MI
-						CHIAMO</button>
-				</p>
+
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q2" type="radio" id="2q1">Cadesse
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q2" type="radio" id="2q2">Caduto 
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q2" type="radio" id="2q3">Cadere
+					</label>
+				</div>
 
 			</div>
 		</dl>
@@ -100,58 +132,68 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					3</h3>
-				<p>COME STAI?</p>
+				<p> Come stai ? </p>
 				<hr>
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">BENE</button>
-					<button type="button" class="btn btn-outline-info">BUONO</button>
-					<button type="button" class="btn btn-outline-info">MIGLIORE</button>
-				</p>
+
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q3" type="radio" id="3q1">Bene
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q3" type="radio" id="3q2">Migliore
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q3" type="radio" id="3q3">Bello
+					</label>
+				</div>
 
 			</div>
 		</dl>
-
 
 
 		<dl>
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					4</h3>
-				<img
-					src="images/Aquilone.jpg"
-					width="200" height="200">
+				<img src="images/Aquilone.jpg" width="150" height="150">
 				<hr>
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">ACQUILONE</button>
-					<button type="button" class="btn btn-outline-info">AQUILONE</button>
-					<button type="button" class="btn btn-outline-info">AQULONE1</button>
-				</p>
 
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q4" type="radio" id="4q1">Acquilone
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q4" type="radio" id="4q2">Aquilone
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q4" type="radio" id="4q3">Aqulone
+					</label>
+				</div>
 			</div>
 		</dl>
+
 
 		<dl>
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					5</h3>
-				<p>PIU' DI UNO: UNA STREGA</p>
+				<p> Una strega</p>
 				<hr>
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">DUE
-						STREGE</button>
-					<button type="button" class="btn btn-outline-info">DUE
-						STREGHE</button>
-					<button type="button" class="btn btn-outline-info">DUE
-						STREGA</button>
-				</p>
+
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q5" type="radio" id="5q1">Due strege
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q5" type="radio" id="5q2">Due strega
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q5" type="radio" id="5q3">Due streghe
+					</label>
+				</div>
 
 			</div>
 		</dl>
 		<dl>
-			<button type="button" class="btn btn-primary"
-				style="font-family: Comic Sans MS">VERIFICA</button>
+			<button type="button" onclick="calcolaPunteggio();"
+				class="btn btn-primary" style="font-family: Comic Sans MS">VERIFICA</button>
 		</dl>
 	</dl>
-
 </body>
+
+<script src="js/italiano.js"></script>
 </html>

@@ -28,7 +28,8 @@
 	crossorigin="anonymous"></script>
 
 
-<title>Modulo di Inglese</title>
+<title>Modulo della lingua Inglese</title>
+
 </head>
 <style>
 body {
@@ -36,20 +37,46 @@ body {
 	justify-content: center;
 	text-align: center;
 	background: beige;
-	overflow: hidden;
 }
 </style>
 </head>
-
 <script type="text/javascript">
 	function home() {
-		window.location.href = "play.jsp";
+		var r = window
+				.confirm("Sei sicuro di voler tornare alla home? Tutti i progressi andranno persi!");
+		if (r) {
+			window.location.href = "play.jsp";
+		}
+
 	}
 </script>
 
-<link rel="stylesheet" href="textAnimatedPlay.css" type="text/css">
 
+
+
+<link rel="stylesheet" href="textAnimatedPlayEdited.css" type="text/css">
 <body style="overflow: auto">
+
+
+	<div class="simpleSpan"
+		style="position: fixed; margin-left: 40%; z-index: 99">
+
+		<span class="border border-primary"
+			style="position: absolute; color: black; text-shadow: none;"
+			id="chronotime">0:00:00:00</span>
+		<form name="chronoForm">
+			<input type="button" hidden name="startstop" value="start!"
+				onClick="chronoStart()" /> <input type="button" hidden name="reset"
+				value="reset!" onClick="chronoReset()" />
+		</form>
+	</div>
+
+
+
+
+	<h3 style="padding-left: 0%; position: absolute; top: 25%">
+		Benvenuto nel Modulo della lingua Inglese!<br>
+	</h3>
 
 	<h1
 		style="position: relative; right: 40%; position: absolute; z-index: 1">
@@ -57,9 +84,7 @@ body {
 			<span>S</span><span>M</span><span>I</span><span>L</span><span>E</span>
 		</div>
 	</h1>
-	<h3 style="padding-left: 0%; position: absolute; top: 25%">
-		Benvenuto nel Modulo della lingua Inglese!<br>
-	</h3>
+
 
 
 	<dl style="position: absolute;">
@@ -69,12 +94,16 @@ body {
 					1</h3>
 				<img src="images/mela-rossa.jpg" width="150" height="150">
 				<hr>
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">Aple</button>
-					<button type="button" class="btn btn-outline-info">Apple</button>
-					<button type="button" class="btn btn-outline-info">Applle</button>
-					
-				</p>
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q1" id="1q1" type="radio">Aple
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q1" id="1q2" type="radio">Apple
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q1" id="1q3" type="radio">Applle
+					</label>
+				</div>
+
 
 			</div>
 		</dl>
@@ -83,16 +112,18 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					2</h3>
-				<p>La traduzione di: "la penna e' sul tavolo" e':</p>
+				<p>La traduzione di: "La penna e' sul tavolo" :</p>
 				<hr>
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">The pen
-						is over the table</button>
-					<button type="button" class="btn btn-outline-info">The pen
-						are on the table</button>
-					<button type="button" class="btn btn-outline-info">The pen
-						is on the table</button>
-				</p>
+
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q2" type="radio" id="2q1">The pen is over the table
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q2" type="radio" id="2q2">The pen are on the table 
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q2" type="radio" id="2q3">The pen is on the table
+					</label>
+				</div>
 
 			</div>
 		</dl>
@@ -101,13 +132,18 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					3</h3>
-				<img src="images/8.jpg" width="150" height="150">
+				<img src="images/8.jpg"width="150" height="150">
 				<hr>
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">Eight</button>
-					<button type="button" class="btn btn-outline-info">Eght</button>
-					<button type="button" class="btn btn-outline-info">Eigt</button>
-				</p>
+
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q3" type="radio" id="3q1">Eight
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q3" type="radio" id="3q2">Eght
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q3" type="radio" id="3q3">Eigt
+					</label>
+				</div>
 
 			</div>
 		</dl>
@@ -117,36 +153,49 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					4</h3>
-				<p>The dog is __</p>
-				<hr>
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">beautiful</button>
-					<button type="button" class="btn btn-outline-info">yellow</button>
-					<button type="button" class="btn btn-outline-info">nose</button>
+				<p>
+					The dog is __
 				</p>
+				<hr>
 
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q4" type="radio" id="4q1">Beautiful
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q4" type="radio" id="4q2">Yellow
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q4" type="radio" id="4q3">Nose
+					</label>
+				</div>
 			</div>
 		</dl>
+
 
 		<dl>
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					5</h3>
-				<img src="images/letto.jpg" width="300" height="150">
+				<img src="images/letto.jpg"width="150" height="150">
 				<hr>
-				<p class="mb-0">
-					<button type="button" class="btn btn-outline-info">lip</button>
-					<button type="button" class="btn btn-outline-info">bad</button>
-					<button type="button" class="btn btn-outline-info">book</button>
-				</p>
+
+				<div class="btn-group" data-toggle="buttons">
+					<label for="" class="btn btn-outline-info"> <input
+						name="q5" type="radio" id="5q1">Lip
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q5" type="radio" id="5q2">Bad
+					</label> <label for="" class="btn btn-outline-info"> <input
+						name="q5" type="radio" id="5q3">Book
+					</label>
+				</div>
 
 			</div>
 		</dl>
 		<dl>
-			<button type="button" class="btn btn-primary"
-				style="font-family: Comic Sans MS">VERIFICA</button>
+			<button type="button" onclick="calcolaPunteggio();"
+				class="btn btn-primary" style="font-family: Comic Sans MS">VERIFICA</button>
 		</dl>
 	</dl>
-
 </body>
+
+<script src="js/inglese.js"></script>
 </html>
