@@ -33,6 +33,8 @@ function calcolaPunteggio(){
 	tempo = document.getElementById("chronotime").innerHTML;
 	console.log(punteggio + " " + corrette + " " + tempo);
 	
+	window.location.href ="CreateStat?punteggio=" + punteggio + "&corrette=" + corrette + "&tempo=" + tempo + "&nomeGioco=italiano" + "&ndomande=5";
+
 	
 }
 
