@@ -39,10 +39,16 @@
 	href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
 	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
 	crossorigin="anonymous">
-	
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+
+</head>
 <script type="text/javascript">
 	function home() {
 		window.location.href = "play.jsp";
@@ -61,19 +67,21 @@ body {
 }
 
 table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	min-width: 280%;
+	max-width: 800px;
 }
 
 td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+	background-color: #dddddd;
 }
 </style>
 
@@ -106,63 +114,86 @@ tr:nth-child(even) {
 			aria-controls="pills-contact" aria-selected="false"
 			style="font-family: Comic Sans MS">Suggerimenti</a></li>
 	</ul>
-	<div class="tab-content" id="pills-tabContent" style="margin-top: 15%">
+	<div class="tab-content" id="pills-tabContent"
+		style="margin-top: 15%; margin-top: 15%; margin-right: 20%;">
 		<div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-			aria-labelledby="pills-home-tab">
-			
+			aria-labelledby="pills-home-tab" style="margin-right: -10%">
+
 			<p style="text-align: left">
 			<table>
 				<tr>
 					<th>Materia</th>
-					<th>Abilità</th>
+					<th>Abilita'</th>
 				</tr>
 				<tr>
 					<td>Italiano:</td>
-					<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"><i class="fas fa-star"></i></i><i class="far fa-star"></i></td>
+					<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+						class="fas fa-star"><i class="fas fa-star"></i></i><i
+						class="far fa-star"></i></td>
 				</tr>
 				<tr>
 					<td>Matematica:</td>
-					<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"><i class="far fa-star"></i></i><i class="far fa-star"></i></td>
+					<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+						class="far fa-star"><i class="far fa-star"></i></i><i
+						class="far fa-star"></i></td>
 				</tr>
 				<tr>
 					<td>Inglese:</td>
-					<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"><i class="fas fa-star"></i></i><i class="fas fa-star"></i></td>
-					
+					<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+						class="fas fa-star"><i class="fas fa-star"></i></i><i
+						class="fas fa-star"></i></td>
+
 				</tr>
 				<tr>
 					<td>Logica</td>
-					<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"><i class="far fa-star"></i></i><i class="far fa-star"></i></td>
-					
+					<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+						class="fas fa-star"><i class="far fa-star"></i></i><i
+						class="far fa-star"></i></td>
+
 				</tr>
 			</table>
 			</p>
-			
-			<ul style="text-align:left"class="w3-ul w3-border  w3-hoverable" id="listtofill">
+			<ul style="text-align: left" class="w3-ul w3-border  w3-hoverable"
+				id="listtofill">
 				<li><h2>Partite giocate</h2></li>
-				<li>
-				<b>Matematica</b> <small><i>(13/10/2015)</i></small>
-				<br>
-				Punteggio: 550
-				</li>
-				<li>
-				<b>Italiano</b> <small><i>(12/10/2015)</i></small>
-				<br>
-				Punteggio: 250
-				</li>
+				<li><b>Matematica</b> <small><i>(13/10/2015)</i></small> <br>
+					Punteggio: 550</li>
+				<li><b>Italiano</b> <small><i>(12/10/2015)</i></small> <br>
+					Punteggio: 250</li>
 			</ul>
 
 		</div>
 		<div class="tab-pane fade" id="pills-profile" role="tabpanel"
-			aria-labelledby="pills-profile-tab">SCRIVERE QUA PER STTISTICHE
-			AVANZATE</div>
+			aria-labelledby="pills-profile-tab">
+
+			<div id="container"
+				style="min-width: 300%; height: 300; margin: 0 auto; margin-left: 20%"></div>
+
+		</div>
+
+
 		<div class="tab-pane fade" id="pills-contact" role="tabpanel"
-			aria-labelledby="pills-contact-tab">SCRIVERE QUA PER
-			SUGGERIMENTI</div>
+			aria-labelledby="pills-contact-tab">
+
+			<b> Italiano</b>
+			<div class="alert alert-info" role="alert">
+				Devi ripetere meglio le doppie! <br> Devi ripetere le regole di
+				'cq' 'qq'
+			</div>
+			<b>Inglese</b>
+			<div class="alert alert-primary" role="alert">Sei
+				bravissimo!Continua cosi!</div>
+			<b> Matematica</b>
+			<div class="alert alert-success" role="alert">Impara meglio le
+				tabelline !!</div>
+			<b>Logica</b>
+			<div class="alert alert-secondary" role="alert">Devi leggere
+				meglio le domande!</div>
+		</div>
 	</div>
 
 </body>
 
-<script type="text/javascript">
+<script src="js/avanzate.js"></script>
 
-</script>
 </html>
