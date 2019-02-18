@@ -94,7 +94,7 @@ body {
 		<p>
 			Gioco giocato:
 			<%=nomeGioco%>
-			<br> risposte corrette su
+			<br> <%= corrette %> risposte corrette su
 			<%=num_domande%>
 			<br> Hai impiegato
 			<%=tempo%>

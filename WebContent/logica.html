@@ -51,6 +51,31 @@ body {
 	}
 </script>
 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example of Bootstrap 3 Popover</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover({
+        placement : 'top'
+    });
+});
+</script>
+<style type="text/css">
+.bs-example {
+	margin: 150px 50px;
+}
+
+.popover-demo {
+	margin-bottom: 20px;
+}
+</style>
 
 
 
@@ -62,7 +87,8 @@ body {
 		style="position: fixed; margin-left: 40%; z-index: 99">
 
 		<span class="border border-primary"
-			style="position: absolute;color: black; text-shadow: none;" id="chronotime">0:00:00:00</span>
+			style="position: absolute; color: black; text-shadow: none;"
+			id="chronotime">0:00:00:00</span>
 		<form name="chronoForm">
 			<input type="button" hidden name="startstop" value="start!"
 				onClick="chronoStart()" /> <input type="button" hidden name="reset"
@@ -88,14 +114,21 @@ body {
 
 	<dl style="position: absolute;">
 		<dl>
-			<div class="alert alert-success" style="margin-top: 30%">
+			<div class="alert alert-success" style="margin-top: 40%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					1</h3>
+					
 				<p>La mamma di Timo ha quattro figli: Bucaneve,Ginepro e
 					Rosmarino. Come si chiama il quarto figlio?</p>
+					<br>
+					<br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 1"
+					data-content="Vedi bene i figli">
+					Suggerimento</button>
 				<hr>
 
-			
+
 				<div class="btn-group" data-toggle="buttons">
 					<label for="" class="btn btn-outline-info"> <input
 						name="q1" id="1q1" type="radio">Prezzemolino
@@ -105,7 +138,7 @@ body {
 						name="q1" id="1q3" type="radio">Timo
 					</label>
 				</div>
-		
+
 
 			</div>
 		</dl>
@@ -116,6 +149,12 @@ body {
 					2</h3>
 				<p>Una pigna pesa un chilo piu'mezza pigna. Quanto pesa una
 					pigna?</p>
+					<br>
+					<br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 2"
+					data-content="Se una pigna pesa un chilo, quanto pesa una mezza pigna?">
+					Suggerimento</button>
 				<hr>
 
 				<div class="btn-group" data-toggle="buttons">
@@ -137,6 +176,12 @@ body {
 					3</h3>
 				<p>Se hai 52 libri da sistemare in una libreria ed in ciascun
 					ripiano ci stanno 10 libri,quanti ripiani ci serviranno?</p>
+					
+					<br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 3"
+					data-content="Un ripiano va solo per 2 libri">
+					Suggerimento</button>
 				<hr>
 
 				<div class="btn-group" data-toggle="buttons">
@@ -167,6 +212,11 @@ body {
 					rimasti.<br> La mamma gli regala 5 euro<br> Quanti soldi
 					ha ora Maria?
 				</p>
+				<br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 4"
+					data-content="Prendi un foglio e fai i conti!">
+					Suggerimento</button>
 				<hr>
 
 				<div class="btn-group" data-toggle="buttons">
@@ -187,6 +237,12 @@ body {
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					5</h3>
 				<img src="images/logica1.jpg">
+				<br> <br>
+				<br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 5"
+					data-content="Una casa vale 10,un fiore vale 5,un castoro vale 2!">
+					Suggerimento</button>
 				<hr>
 
 				<div class="btn-group" data-toggle="buttons">

@@ -28,6 +28,33 @@
 	crossorigin="anonymous"></script>
 
 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover({
+        placement : 'top'
+    });
+});
+</script>
+<style type="text/css">
+.bs-example {
+	margin: 150px 50px;
+}
+
+.popover-demo {
+	margin-bottom: 20px;
+}
+</style>
+
+
 <title>Modulo di Matematica</title>
 
 </head>
@@ -89,13 +116,15 @@ body {
 
 	<dl style="position: absolute;">
 		<dl>
-			<div class="alert alert-success" style="margin-top: 80%">
+			<div class="alert alert-success" style="margin-top: 100%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					1</h3>
-				<p>6 e' minore < di </p>
+				<p>6 e' minore < di</p>
+				<br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 1" data-content="6 non è minore di 6">
+					Suggerimento</button>
 				<hr>
-
-			
 				<div class="btn-group" data-toggle="buttons">
 					<label for="" class="btn btn-outline-info"> <input
 						name="q1" id="1q1" type="radio">1-2-3-4
@@ -105,7 +134,7 @@ body {
 						name="q1" id="1q3" type="radio">7-8-9
 					</label>
 				</div>
-			
+
 
 			</div>
 		</dl>
@@ -115,8 +144,11 @@ body {
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					2</h3>
 				<p>Quanto fa questa addizione: 5+2+1</p>
+				<br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 2" data-content="5 + 2 = 7">
+					Suggerimento</button>
 				<hr>
-
 				<div class="btn-group" data-toggle="buttons">
 					<label for="" class="btn btn-outline-info"> <input
 						name="q2" type="radio" id="2q1">5
@@ -135,6 +167,10 @@ body {
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					3</h3>
 				<p>Quanto fa questa sottrazione: 16-5</p>
+				<br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 3" data-content="Fai la sottrazione in colonna">
+					Suggerimento</button>
 				<hr>
 
 				<div class="btn-group" data-toggle="buttons">
@@ -155,10 +191,15 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					4</h3>
-						<img src="images/palloni.jpg"width="150" height="150">
-				<p>
-					Quanti palloncini ci sono?
-				</p>
+					<br>
+				<img src="images/palloni.jpg" width="300" height="150">
+				<br>
+				<br>
+				<p>Quanti palloncini ci sono?</p>
+					<br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 4" data-content="Conta con le dita">
+					Suggerimento</button>
 				<hr>
 
 				<div class="btn-group" data-toggle="buttons">
@@ -178,7 +219,11 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					5</h3>
-				<p> Il doppio di 4 e'</p>
+				<p>Il doppio di 4 e'</p>
+					<br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 5" data-content="10 non è il doppio di nessuno">
+					Suggerimento</button>
 				<hr>
 
 				<div class="btn-group" data-toggle="buttons">

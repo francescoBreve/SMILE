@@ -26,7 +26,31 @@
 <script src="https://code.jquery.com/jquery-3.3.1.js"
 	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 	crossorigin="anonymous"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('[data-toggle="popover"]').popover({
+			placement : 'top'
+		});
+	});
+</script>
+<style type="text/css">
+.bs-example {
+	margin: 150px 50px;
+}
+
+.popover-demo {
+	margin-bottom: 20px;
+}
+</style>
 
 <title>Modulo della lingua Inglese</title>
 
@@ -89,10 +113,16 @@ body {
 
 	<dl style="position: absolute;">
 		<dl>
-			<div class="alert alert-success" style="margin-top: 40%">
+			<div class="alert alert-success" style="margin-top: 60%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					1</h3>
+					<br>
 				<img src="images/mela-rossa.jpg" width="150" height="150">
+				<br> <br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 1"
+					data-content="Le doppie sono importanti,ma non troppo">
+					Suggerimento</button>
 				<hr>
 				<div class="btn-group" data-toggle="buttons">
 					<label for="" class="btn btn-outline-info"> <input
@@ -113,13 +143,18 @@ body {
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					2</h3>
 				<p>La traduzione di: "La penna e' sul tavolo" :</p>
+				<br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 2"
+					data-content="la 2 o la 3?">
+					Suggerimento</button>
 				<hr>
 
 				<div class="btn-group" data-toggle="buttons">
 					<label for="" class="btn btn-outline-info"> <input
 						name="q2" type="radio" id="2q1">The pen is over the table
 					</label> <label for="" class="btn btn-outline-info"> <input
-						name="q2" type="radio" id="2q2">The pen are on the table 
+						name="q2" type="radio" id="2q2">The pen are on the table
 					</label> <label for="" class="btn btn-outline-info"> <input
 						name="q2" type="radio" id="2q3">The pen is on the table
 					</label>
@@ -132,7 +167,12 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					3</h3>
-				<img src="images/8.jpg"width="150" height="150">
+				<img src="images/8.jpg" width="150" height="150">
+				<br> <br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 3"
+					data-content="Ei!">
+					Suggerimento</button>
 				<hr>
 
 				<div class="btn-group" data-toggle="buttons">
@@ -153,9 +193,12 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					4</h3>
-				<p>
-					The dog is __
-				</p>
+				<p>The dog is __</p>
+				<br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 4"
+					data-content="The nose yellow">
+					Suggerimento</button>
 				<hr>
 
 				<div class="btn-group" data-toggle="buttons">
@@ -175,7 +218,12 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					5</h3>
-				<img src="images/letto.jpg"width="150" height="150">
+				<img src="images/letto.jpg" width="150" height="150">
+				<br> <br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 5"
+					data-content="Lip è labbro">
+					Suggerimento</button>
 				<hr>
 
 				<div class="btn-group" data-toggle="buttons">
