@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ page import="com.smile.model.Utente"%>
+<%@ page import="com.smile.model.Statistica"%>
+<%@ page import="java.util.ArrayList"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,6 +35,12 @@
 	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 	crossorigin="anonymous"></script>
 
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+	crossorigin="anonymous">
+	
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <script type="text/javascript">
@@ -51,7 +59,29 @@ body {
 	background: beige;
 	overflow: hidden;
 }
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 </style>
+
+<%
+	Utente user = (Utente) request.getAttribute("utente");
+	ArrayList<Statistica> stats = user.getStats();
+%>
+
 <body>
 
 	<h1
@@ -61,23 +91,78 @@ body {
 		</div>
 	</h1>
 
-<ul  class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="margin-top:10%;margin-left:0%; z-index:2 ;position: absolute">
-  <li class="nav-item">
-    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" style="font-family:Comic Sans MS">Statistiche</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"style="font-family:Comic Sans MS">Statistiche Avanzate</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false"style="font-family:Comic Sans MS">Suggerimenti</a>
-  </li>
-</ul>
-<div class="tab-content" id="pills-tabContent" style="margin-top: 15%">
-  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" > SCRIVERE QUA PER STATISTICHE</div>
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">SCRIVERE QUA PER STTISTICHE AVANZATE</div>
-  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">SCRIVERE QUA PER SUGGERIMENTI</div>
-</div>
+	<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist"
+		style="margin-top: 10%; margin-left: 0%; z-index: 2; position: absolute">
+		<li class="nav-item"><a class="nav-link active"
+			id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+			aria-controls="pills-home" aria-selected="true"
+			style="font-family: Comic Sans MS">Statistiche</a></li>
+		<li class="nav-item"><a class="nav-link" id="pills-profile-tab"
+			data-toggle="pill" href="#pills-profile" role="tab"
+			aria-controls="pills-profile" aria-selected="false"
+			style="font-family: Comic Sans MS">Statistiche Avanzate</a></li>
+		<li class="nav-item"><a class="nav-link" id="pills-contact-tab"
+			data-toggle="pill" href="#pills-contact" role="tab"
+			aria-controls="pills-contact" aria-selected="false"
+			style="font-family: Comic Sans MS">Suggerimenti</a></li>
+	</ul>
+	<div class="tab-content" id="pills-tabContent" style="margin-top: 15%">
+		<div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+			aria-labelledby="pills-home-tab">
+			
+			<p style="text-align: left">
+			<table>
+				<tr>
+					<th>Materia</th>
+					<th>Abilità</th>
+				</tr>
+				<tr>
+					<td>Italiano:</td>
+					<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"><i class="fas fa-star"></i></i><i class="far fa-star"></i></td>
+				</tr>
+				<tr>
+					<td>Matematica:</td>
+					<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"><i class="far fa-star"></i></i><i class="far fa-star"></i></td>
+				</tr>
+				<tr>
+					<td>Inglese:</td>
+					<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"><i class="fas fa-star"></i></i><i class="fas fa-star"></i></td>
+					
+				</tr>
+				<tr>
+					<td>Logica</td>
+					<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"><i class="far fa-star"></i></i><i class="far fa-star"></i></td>
+					
+				</tr>
+			</table>
+			</p>
+			
+			<ul style="text-align:left"class="w3-ul w3-border  w3-hoverable" id="listtofill">
+				<li><h2>Partite giocate</h2></li>
+				<li>
+				<b>Matematica</b> <small><i>(13/10/2015)</i></small>
+				<br>
+				Punteggio: 550
+				</li>
+				<li>
+				<b>Italiano</b> <small><i>(12/10/2015)</i></small>
+				<br>
+				Punteggio: 250
+				</li>
+			</ul>
+
+		</div>
+		<div class="tab-pane fade" id="pills-profile" role="tabpanel"
+			aria-labelledby="pills-profile-tab">SCRIVERE QUA PER STTISTICHE
+			AVANZATE</div>
+		<div class="tab-pane fade" id="pills-contact" role="tabpanel"
+			aria-labelledby="pills-contact-tab">SCRIVERE QUA PER
+			SUGGERIMENTI</div>
+	</div>
 
 </body>
 
+<script type="text/javascript">
+
+</script>
 </html>

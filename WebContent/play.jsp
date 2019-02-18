@@ -70,6 +70,7 @@
 	color: white;
 	font-size: 1.5em;
 	text-shadow: 0 -1px 0 hsla(0, 0%, 0%, 0.5);
+	z-index:1;
 }
 
 .bookmark:before, .bookmark:after {
@@ -270,6 +271,7 @@
  border: solid 1px #0076a3;
  background: #0095cd;
 font-family:Comic Sans MS;
+z-index:2;
 		;">
 		Disconnettiti</a>
 
