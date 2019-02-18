@@ -27,7 +27,31 @@
 	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 	crossorigin="anonymous"></script>
 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover({
+        placement : 'top'
+    });
+});
+</script>
+<style type="text/css">
+.bs-example {
+	margin: 150px 50px;
+}
+
+.popover-demo {
+	margin-bottom: 20px;
+}
+</style>
 <title>Modulo della lingua Italiana</title>
 
 </head>
@@ -80,8 +104,7 @@ body {
 	<h1
 		style="position: relative; right: 40%; position: absolute; z-index: 1">
 		<div onclick="home()" style="cursor: pointer">
-		<a href="play.jsp" class="myButton2"></a>
-			<span>S</span><span>M</span><span>I</span><span>L</span><span>E</span>
+			<a href="play.jsp" class="myButton2"></a> <span>S</span><span>M</span><span>I</span><span>L</span><span>E</span>
 			</a>
 		</div>
 	</h1>
@@ -93,8 +116,13 @@ body {
 			<div class="alert alert-success" style="margin-top: 80%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					1</h3>
-				<p> Inserisci l'articolo corretto: __ cane e' in giardino </p>
-				
+				<br>
+				<p>Inserisci l'articolo corretto: __ cane e' in giardino</p>
+				<br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 5" data-content="Lo cane e' in giardino">
+					Suggerimento</button>
+
 				<hr>
 				<div class="btn-group" data-toggle="buttons">
 					<label for="" class="btn btn-outline-info"> <input
@@ -114,14 +142,21 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					2</h3>
+				<br>
+
 				<p>Luca e' __ :</p>
+				<br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 2" data-content="Prova a ripetere la frase!!">
+					Suggerimento</button>
+				<br>
 				<hr>
 
 				<div class="btn-group" data-toggle="buttons">
 					<label for="" class="btn btn-outline-info"> <input
 						name="q2" type="radio" id="2q1">Cadesse
 					</label> <label for="" class="btn btn-outline-info"> <input
-						name="q2" type="radio" id="2q2">Caduto 
+						name="q2" type="radio" id="2q2">Caduto
 					</label> <label for="" class="btn btn-outline-info"> <input
 						name="q2" type="radio" id="2q3">Cadere
 					</label>
@@ -134,9 +169,14 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					3</h3>
-				<p> Come stai ? </p>
+				<br>
+				<p>Come stai ?</p>
+				<br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 3" data-content="Prova a ripetere la frase!!">
+					Suggerimento</button>
 				<hr>
-
+				<br>
 				<div class="btn-group" data-toggle="buttons">
 					<label for="" class="btn btn-outline-info"> <input
 						name="q3" type="radio" id="3q1">Bene
@@ -155,7 +195,12 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					4</h3>
-				<img src="images/Aquilone.jpg" width="150" height="150">
+					<br>
+				<img src="images/Aquilone.jpg" width="150" height="150"> <br>
+				<br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 4" data-content="Ripedi le regole di cq">
+					Suggerimento</button>
 				<hr>
 
 				<div class="btn-group" data-toggle="buttons">
@@ -175,7 +220,11 @@ body {
 			<div class="alert alert-success" style="margin-top: 20%">
 				<h3 class="alert-heading" style="font-family: Comic Sans MS">Domanda
 					5</h3>
-				<p> Una strega</p>
+				<p>Una strega</p>
+				<br>
+				<button type="button" class="btn btn-info" data-toggle="popover"
+					title="Suggerimento 5" data-content="La h e' importante">
+					Suggerimento</button>
 				<hr>
 
 				<div class="btn-group" data-toggle="buttons">
