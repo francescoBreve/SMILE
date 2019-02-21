@@ -70,7 +70,6 @@ table {
 	font-family: arial, sans-serif;
 	border-collapse: collapse;
 	width: 100%;
-	min-width: 280%;
 	max-width: 800px;
 }
 
@@ -115,7 +114,7 @@ tr:nth-child(even) {
 			style="font-family: Comic Sans MS">Suggerimenti</a></li>
 	</ul>
 	<div class="tab-content" id="pills-tabContent"
-		style="margin-top: 15%; margin-top: 15%; margin-right: 20%;">
+		style="margin-top: 15%; margin-top: 15%;">
 		<div class="tab-pane fade show active" id="pills-home" role="tabpanel"
 			aria-labelledby="pills-home-tab" style="margin-right: -10%">
 
@@ -145,7 +144,7 @@ tr:nth-child(even) {
 
 				</tr>
 				<tr>
-					<td>Logica</td>
+					<td>Logica:</td>
 					<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i
 						class="fas fa-star"><i class="far fa-star"></i></i><i
 						class="far fa-star"></i></td>
@@ -153,7 +152,7 @@ tr:nth-child(even) {
 				</tr>
 			</table>
 			</p>
-			<ul style="text-align: left" class="w3-ul w3-border  w3-hoverable"
+			<ul style="text-align: left" class="w3-ul w3-border"
 				id="listtofill">
 				<li><h2>Partite giocate</h2></li>
 				<li><b>Matematica</b> <small><i>(13/10/2015)</i></small> <br>
@@ -167,7 +166,7 @@ tr:nth-child(even) {
 			aria-labelledby="pills-profile-tab">
 
 			<div id="container"
-				style="min-width: 300%; height: 300; margin: 0 auto; margin-left: 20%"></div>
+				style="min-width: 300%; height: 300; margin: 0 auto;"></div>
 
 		</div>
 
