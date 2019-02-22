@@ -155,10 +155,8 @@ tr:nth-child(even) {
 			<ul style="text-align: left" class="w3-ul w3-border"
 				id="listtofill">
 				<li><h2>Partite giocate</h2></li>
-				<li><b>Matematica</b> <small><i>(13/10/2015)</i></small> <br>
-					Punteggio: 550</li>
-				<li><b>Italiano</b> <small><i>(12/10/2015)</i></small> <br>
-					Punteggio: 250</li>
+				<li><b>Italiano</b> <small><i></i></small> <br>
+					Punteggio: 200</li>
 			</ul>
 
 		</div>

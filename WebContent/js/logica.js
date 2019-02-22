@@ -14,7 +14,7 @@ function calcolaPunteggio(){
 		punteggio += 50;
 		corrette++;
 	}
-	if($("#2q2").prop('checked')){
+	if($("#2q1").prop('checked')){
 		punteggio += 50;
 		corrette++;
 	}

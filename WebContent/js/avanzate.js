@@ -24,17 +24,17 @@ Highcharts.chart('container', {
 		}
 	},
 	series: [{
-		name: 'Ialiano',
-		data: [50,150,50,0,350,400,0,50]
+		name: 'Italiano',
+		data: [0]
 	}, {
 		name: 'Inglese',
-		data: [0,150,400,500,450,0,50,300]
+		data: [0,]
 	}, {
-		name: 'Inglese',
-		data: [300,400,500]
+		name: 'Matematica',
+		data: [0]
 	}, {
-		name: 'Inglese',
-		data: [0,50]
+		name: 'Logica',
+		data: [0]
 	}]
 	
 });
