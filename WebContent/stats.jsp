@@ -128,25 +128,25 @@ tr:nth-child(even) {
 					<td>Italiano:</td>
 					<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i
 						class="fas fa-star"><i class="fas fa-star"></i></i><i
-						class="far fa-star"></i></td>
+						class="far fa-star">	</i></td>
 				</tr>
 				<tr>
 					<td>Matematica:</td>
-					<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+					<td><i class="far fa-star"></i><i class="far fa-star"></i><i
 						class="far fa-star"><i class="far fa-star"></i></i><i
 						class="far fa-star"></i></td>
 				</tr>
 				<tr>
 					<td>Inglese:</td>
-					<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-						class="fas fa-star"><i class="fas fa-star"></i></i><i
-						class="fas fa-star"></i></td>
+					<td><i class="far fa-star"></i><i class="far fa-star"></i><i
+						class="far fa-star"><i class="far fa-star"></i></i><i
+						class="far fa-star"></i></td>
 
 				</tr>
 				<tr>
 					<td>Logica:</td>
-					<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-						class="fas fa-star"><i class="far fa-star"></i></i><i
+					<td><i class="far fa-star"></i><i class="far fa-star"></i><i
+						class="far fa-star"><i class="far fa-star"></i></i><i
 						class="far fa-star"></i></td>
 
 				</tr>

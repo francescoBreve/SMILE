@@ -25,16 +25,16 @@ Highcharts.chart('container', {
 	},
 	series: [{
 		name: 'Italiano',
-		data: [0]
+		data: [0,200]
 	}, {
 		name: 'Inglese',
-		data: [0,]
+		data: [0,0,0,0,0,0,0,0,0,0,0,0]
 	}, {
 		name: 'Matematica',
-		data: [0]
+		data: [0,0,0,0,0,0,0,0,0,0,0,0]
 	}, {
 		name: 'Logica',
-		data: [0]
+		data: [0,0,0,0,0,0,0,0,0,0,0,0]
 	}]
 	
 });
